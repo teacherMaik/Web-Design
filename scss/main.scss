@@ -1,0 +1,176 @@
+@import 'config';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $tm-black-solid;
+  color: $tm-white-solid
+}
+
+#tm-navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+
+  &.top {
+    background-color: $tm-black-solid;
+  }
+
+  &.scrolled {
+    background-color: $tm-black-transparent;
+  }
+
+  .tm-brand {
+    display: flex;
+  }
+
+  .tm-main-menu {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 1rem;
+
+      a {
+        font-size: 2.1rem;
+        padding: 0.7rem 1.3rem;
+        color: $tm-white-solid;
+      }
+    }
+
+    :nth-child(3) {
+
+      a {
+        background-color: $tm-coralRed-solid;
+        border-radius: 2rem;
+      }
+    }
+  }
+}
+
+#tm-hero-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7rem;
+
+  .hero-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .intro {
+      width: 42%;
+
+      h1, h2 {
+        font-size: 7rem;
+        font-family: $tm-kanit;
+        color: $tm-white-solid;
+        font-weight: 300;
+        line-height: 84%;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+        color: $tm-coralRed-solid;
+      }
+
+      p {
+        font-size: 3rem;
+        font-family: $tm-roboto;
+
+        span {
+          color: $tm-teal-solid;
+        }
+      }
+    }
+
+    .display {
+      width: 50%;
+      font-size: 7rem;
+      font-family: $tm-kanit;
+      font-weight: 400;
+    }
+  }
+}
+
+/*#tm-home-content {
+  position: relative;
+  height: 2000px;
+  background-color: $tm-white-solid;
+}*/
+
+footer {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  .info {
+
+    .social {
+      display: flex;
+  
+      i {
+        color: $tm-white-solid;
+        padding: 1rem;
+        font-size: 3rem;
+  
+        &:hover {
+          color: $tm-coralRed-solid;
+        }
+      }
+    }
+
+    h3 {
+      font-family: $tm-roboto;
+      font-size: 1.3rem;
+      font-weight: 300;
+      padding: 0.3rem;
+    }
+  }
+
+  .webs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    
+    a {
+      padding: 0.3rem;
+      color: $tm-white-solid;
+      font-family: $tm-roboto;
+      font-size: 1.3rem;
+      font-weight: 300;
+
+      &:hover {
+        color: $tm-teal-solid
+      }
+    }
+  }
+}

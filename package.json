@@ -1,0 +1,14 @@
+{
+  "name": "web-design-portfolio",
+  "version": "1.0.0",
+  "description": "public web design portfolio for github hosted on netlify",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w scss/main.scss:dist/css/main.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.0"
+  }
+}

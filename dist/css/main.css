@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+#tm-navbar {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+#tm-navbar.top {
+  background-color: rgb(0, 0, 0);
+}
+#tm-navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#tm-navbar .tm-brand {
+  display: flex;
+}
+#tm-navbar .tm-main-menu {
+  display: flex;
+  align-items: center;
+}
+#tm-navbar .tm-main-menu li {
+  margin: 0 1rem;
+}
+#tm-navbar .tm-main-menu li a {
+  font-size: 2.1rem;
+  padding: 0.7rem 1.3rem;
+  color: rgb(255, 255, 255);
+}
+#tm-navbar .tm-main-menu :nth-child(3) a {
+  background-color: rgb(234, 68, 90);
+  border-radius: 2rem;
+}
+
+#tm-hero-home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7rem;
+}
+#tm-hero-home .hero-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#tm-hero-home .hero-content .intro {
+  width: 42%;
+}
+#tm-hero-home .hero-content .intro h1, #tm-hero-home .hero-content .intro h2 {
+  font-size: 7rem;
+  font-family: "Kanit", sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  line-height: 84%;
+}
+#tm-hero-home .hero-content .intro h2 {
+  margin-bottom: 1rem;
+  color: rgb(234, 68, 90);
+}
+#tm-hero-home .hero-content .intro p {
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+}
+#tm-hero-home .hero-content .intro p span {
+  color: rgb(116, 240, 237);
+}
+#tm-hero-home .hero-content .display {
+  width: 50%;
+  font-size: 7rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+}
+
+/*#tm-home-content {
+  position: relative;
+  height: 2000px;
+  background-color: $tm-white-solid;
+}*/
+footer {
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer .info .social {
+  display: flex;
+}
+footer .info .social i {
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  font-size: 3rem;
+}
+footer .info .social i:hover {
+  color: rgb(234, 68, 90);
+}
+footer .info h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 0.3rem;
+}
+footer .webs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer .webs a {
+  padding: 0.3rem;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+footer .webs a:hover {
+  color: rgb(116, 240, 237);
+}
+
+/*# sourceMappingURL=main.css.map */
