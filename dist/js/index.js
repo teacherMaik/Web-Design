@@ -25,7 +25,7 @@ function isInViewport(el) {
 
   );
 }
-
+/*
 function typeWriter() {
 
   const typeWriterVals = ["JAVASCRIPT", "JQUERY", "CSS", "BOOTSTRAP", "TAILWIND", "INKSCAPE"];
@@ -48,7 +48,7 @@ function typeWriter() {
     while (i < tempWord.length ){
       
       setTimeout(function () {
-        typeWriterTxt.innerText = typeWriterTxt.innerText + tempWord[i];
+        typeWriterTxt.innerText = typeWriterTxt.innerText + tempWord.substring(i, i + 1);
       }, 2000);
 
       i++;
@@ -58,5 +58,25 @@ function typeWriter() {
   }
 
   return;
-}
+}*/
+
+function type2() {
+
+  const typeWriterVals = ["JAVASCRIPT", "JQUERY", "CSS", "BOOTSTRAP", "TAILWIND", "INKSCAPE"];
+  const typeWriterTxt = document.getElementById('tm-type-writer');
+
+  let word = typeWriterVals[3];
+
+  console.log(word);
+  console.log(word.length);
+
+  let i = 0;
+
+  while (i < word.length) {
+
+    setTimeout(typeWriterTxt.innerHTML = word.substring(0, i + 1), 500);
+
+    i++;
+  }
+};
 
