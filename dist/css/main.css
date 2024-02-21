@@ -102,11 +102,12 @@ body {
   font-weight: 400;
 }
 
-/*#tm-home-content {
+#tm-home-content {
   position: relative;
-  height: 2000px;
-  background-color: $tm-white-solid;
-}*/
+  height: 3000px;
+  background-color: rgb(255, 255, 255);
+}
+
 footer {
   padding: 1rem 3rem;
   display: flex;
