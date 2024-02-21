@@ -1,6 +1,6 @@
 
 
-const typeWriterWords = ["JAVASCRIPT", "JQUERY", "CSS/SASS", "BOOTSTRAP", "TAILWIND", "INKSCAPE"];
+const typeWriterWords = ["JAVASCRIPT", "JQUERY", "SASS•CSS", "BOOTSTRAP", "TAILWIND", "INKSCAPE"];
 const typeWriterEl = document.getElementById('tm-type-writer');
 
 let typing = true;
