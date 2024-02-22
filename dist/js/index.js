@@ -12,13 +12,13 @@ let scrolled = false;
 
 
 // Navbar Animation and Transition on window scroll
-window.addEventListener('scroll', function() {
+/*window.addEventListener('scroll', function() {
   if (window.scrollY > 100) {
 
     navBar.classList.remove('top');
     navBar.classList.add('scrolled');
   }
-});
+});*/
 
 
 // sleep Function for pause. Can be used for different times by modifying the time input
