@@ -10,6 +10,12 @@
   font-size: 10px;
 }
 
+body {
+  background-color: $tm-black-solid;
+  color: $tm-white-solid;
+  overflow-x: hidden;
+}
+
 li {
   list-style-type: none;
 }
@@ -18,9 +24,12 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: $tm-black-solid;
-  color: $tm-white-solid
+h1, h2 {
+  font-family: $tm-kanit;
+}
+
+p, h3, h4 {
+  font-family: $tm-roboto;
 }
 
 #tm-navbar {
@@ -87,13 +96,13 @@ body {
 
     .intro {
       width: 42%;
+      line-height: 4rem;
 
       h1, h2 {
         font-size: 7rem;
-        font-family: $tm-kanit;
         color: $tm-white-solid;
         font-weight: 300;
-        line-height: 84%;
+        line-height: 7rem;
       }
 
       h2 {
@@ -103,7 +112,6 @@ body {
 
       p {
         font-size: 3rem;
-        font-family: $tm-roboto;
 
         span {
           color: $tm-teal-solid;
@@ -120,11 +128,169 @@ body {
   }
 }
 
-/*#tm-home-content {
+#tm-home-content {
   position: relative;
-  height: 2000px;
   background-color: $tm-white-solid;
-}*/
+  color: $tm-black-solid;
+  font-family: $tm-roboto;
+  font-size: 3rem;
+
+  .tm-home-content-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+
+    .tm-presentation {
+      position: relative;
+      width: 60%;
+      padding: 2rem;
+      margin-bottom: 3rem;
+
+      h4 {
+        text-align: justify;
+        font-size: 2.1rem;
+        font-family: $tm-roboto;
+        line-height: 3rem;
+      }
+    }
+
+    .tm-presentation-cards {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+      margin-bottom: 7rem;
+
+      .tm-card {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-color: $tm-black-solid;
+        border-radius: 7%;
+        padding: 2.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 7%;
+
+        h3 {
+          font-size: 3.6rem;
+          color: $tm-white-solid;
+        }
+
+        .languages {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1.3rem;
+
+          p {
+            text-align: justify;
+            color: $tm-white-solid;
+            font-size: 1.6rem;
+          }
+        }
+
+        &.first::after {
+          content: '';
+          position: absolute;
+          width: 5%;
+          aspect-ratio: 1/1;;
+          background-color: $tm-coralRed-solid;
+          border-radius: 50%;
+          top: 47.5%;
+          left: -2.5%;
+        }
+
+        &.first::before {
+          content: '';
+          position: absolute;
+          background-color: $tm-white-solid;
+          width: 10%;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          top: 45%;
+          left: -5%;
+        }
+      }
+
+      .time-line {
+        position: relative;
+        width: 100%;
+        height: 3%;
+        background-color: $tm-coralRed-solid;
+        align-self: center;
+        z-index: 1;
+
+        &-end-buffer {
+          position: absolute;
+          height: 300%;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          background-color: $tm-white-solid;
+          z-index: 1;
+          left: -7%;
+          top: -100%;
+          z-index: 1;
+
+          &.last {
+            left: 90%
+          }
+        }
+
+        &-end-dot {
+          position: absolute;
+          left: -3%;
+          height: 100%;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          background-color: $tm-coralRed-solid;
+          z-index: 2;
+
+          &.last {
+            left: 97%;
+          }
+        }
+
+        &-line {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          background-color: $tm-coralRed-solid;
+          z-index: 2;
+        }
+      }
+    }
+
+    .tm-home-pic {
+      position: relative;
+      width: 42%;
+      height: 70vh;
+      align-self: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 7rem;
+
+      img {
+        width: 42%;
+        border: 7px solid $tm-teal-solid;
+        border-radius: 50%;
+        z-index: 2;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 48%;
+        aspect-ratio: 1/1;
+        background-color: $tm-black-solid;
+        border-radius: 50%;
+      }
+    }
+  }
+}
 
 footer {
   padding: 1rem 3rem;

@@ -1,7 +1,7 @@
 {
   "name": "web-design-portfolio",
   "version": "1.0.0",
-  "description": "public web design portfolio for github hosted on netlify",
+  "description": "Public Repository with a collection of my professional webs and different features I program in HTML5 CSS and Java Script",
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss/main.scss:dist/css/main.css"
@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.71.0"
+    "sass": "^1.71.1"
   }
 }

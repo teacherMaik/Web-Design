@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+span.inline-coral {
+  color: rgb(234, 68, 90);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +13,12 @@
   font-size: 10px;
 }
 
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
+
 li {
   list-style-type: none;
 }
@@ -17,9 +27,12 @@ a {
   text-decoration: none;
 }
 
-body {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+h1, h2 {
+  font-family: "Kanit", sans-serif;
+}
+
+p, h3, h4 {
+  font-family: "Roboto", sans-serif;
 }
 
 #tm-navbar {
@@ -76,13 +89,13 @@ body {
 }
 #tm-hero-home .hero-content .intro {
   width: 42%;
+  line-height: 4rem;
 }
 #tm-hero-home .hero-content .intro h1, #tm-hero-home .hero-content .intro h2 {
   font-size: 7rem;
-  font-family: "Kanit", sans-serif;
   color: rgb(255, 255, 255);
   font-weight: 300;
-  line-height: 84%;
+  line-height: 7rem;
 }
 #tm-hero-home .hero-content .intro h2 {
   margin-bottom: 1rem;
@@ -90,7 +103,6 @@ body {
 }
 #tm-hero-home .hero-content .intro p {
   font-size: 3rem;
-  font-family: "Roboto", sans-serif;
 }
 #tm-hero-home .hero-content .intro p span {
   color: rgb(116, 240, 237);
@@ -102,11 +114,151 @@ body {
   font-weight: 400;
 }
 
-/*#tm-home-content {
+#tm-home-content {
   position: relative;
-  height: 2000px;
-  background-color: $tm-white-solid;
-}*/
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+}
+#tm-home-content .tm-home-content-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation {
+  position: relative;
+  width: 60%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation h4 {
+  text-align: justify;
+  font-size: 2.1rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 3rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  margin-bottom: 7rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: rgb(0, 0, 0);
+  border-radius: 7%;
+  padding: 2.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card h3 {
+  font-size: 3.6rem;
+  color: rgb(255, 255, 255);
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card .languages {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card .languages p {
+  text-align: justify;
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card.first::after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  aspect-ratio: 1/1;
+  background-color: rgb(234, 68, 90);
+  border-radius: 50%;
+  top: 47.5%;
+  left: -2.5%;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .tm-card.first::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 10%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  top: 45%;
+  left: -5%;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line {
+  position: relative;
+  width: 100%;
+  height: 3%;
+  background-color: rgb(234, 68, 90);
+  align-self: center;
+  z-index: 1;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line-end-buffer {
+  position: absolute;
+  height: 300%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  left: -7%;
+  top: -100%;
+  z-index: 1;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line-end-buffer.last {
+  left: 90%;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line-end-dot {
+  position: absolute;
+  left: -3%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgb(234, 68, 90);
+  z-index: 2;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line-end-dot.last {
+  left: 97%;
+}
+#tm-home-content .tm-home-content-container .tm-presentation-cards .time-line-line {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(234, 68, 90);
+  z-index: 2;
+}
+#tm-home-content .tm-home-content-container .tm-home-pic {
+  position: relative;
+  width: 42%;
+  height: 70vh;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+#tm-home-content .tm-home-content-container .tm-home-pic img {
+  width: 42%;
+  border: 7px solid rgb(116, 240, 237);
+  border-radius: 50%;
+  z-index: 2;
+}
+#tm-home-content .tm-home-content-container .tm-home-pic::after {
+  position: absolute;
+  content: "";
+  width: 48%;
+  aspect-ratio: 1/1;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
 footer {
   padding: 1rem 3rem;
   display: flex;
