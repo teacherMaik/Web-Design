@@ -35,7 +35,7 @@ const writeLoop = async () => {
 
     while (letter < currentWord.length) {
 
-      typeWriterEl.innerText = currentWord.substring(0, letter + 1);
+      typeWriterEl.innerHTML = currentWord.substring(0, letter + 1);
       await sleep(sleepTime);
       letter++;
     }
@@ -43,7 +43,7 @@ const writeLoop = async () => {
     await sleep(420);
 
     while (letter > 0) {
-      typeWriterEl.innerText = currentWord.substring(0, letter - 1);
+      typeWriterEl.innerHTML = currentWord.substring(0, letter - 1);
       await sleep(42)
       letter--;
     }
