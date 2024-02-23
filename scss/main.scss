@@ -70,14 +70,11 @@ h1, h2 {
         font-size: 2.1rem;
         padding: 0.7rem 1.3rem;
         color: $tm-white-solid;
-      }
-    }
 
-    :nth-child(3) {
-
-      a {
-        background-color: $tm-coralRed-solid;
+        &:hover {
+          background-color: $tm-coralRed-solid;
         border-radius: 2rem;
+        }
       }
     }
   }
@@ -192,7 +189,7 @@ h1, h2 {
                 background-color: $tm-black-solid;
               }
 
-              &.tm-btn-coral:hover {
+              &.tm-btn-coralRed:hover {
                 border: 2px solid $tm-coralRed-solid;
                 color: $tm-coralRed-solid;
                 background-color: $tm-black-solid;
@@ -446,6 +443,14 @@ h1, h2 {
           display: flex;
           align-items: center;
           justify-content: center;
+          cursor: pointer;
+
+          &:hover {
+
+            > div {
+              background-color: $tm-teal-solid;
+            }
+          }
 
           .dot-inner {
             display: block;
@@ -460,9 +465,37 @@ h1, h2 {
   }
 }
 
+section.footer-specs {
+  position: relative;
+  background-color: $tm-coralRed-solid;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  > div {
+    width: 33%;
+    padding: 1rem 2rem;
+
+    p {
+      text-align: justify;
+      font-size: 1.5rem;
+
+      a {
+        color: $tm-black-solid;
+        font-weight: 500;
+
+        &:hover {
+          color: $tm-white-solid;
+        }
+      }
+    }
+  }
+}
+
 
 footer {
-  padding: 1rem 3rem;
+  position: relative;
+  padding: 1rem 7rem;
   display: flex;
   justify-content: space-between;
   background-color: $tm-black-solid;
