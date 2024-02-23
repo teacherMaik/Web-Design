@@ -2,21 +2,21 @@
 
 
 $tm-black-solid: rgba(0, 0, 0, 1);
+// #000000;
 $tm-black-transparent: rgba(0, 0, 0, 0.9);
 $tm-white-solid: rgba(255, 255, 255, 1);
+// #ffffff
 $tm-teal-solid: rgba(116, 240, 237, 1);
+// #74f0ed
 $tm-darkGray-solid: rgba(61, 61, 61, 1);
+// 3d3d3d
 $tm-darkGray-transparent: rgba(61, 61, 61, 0.8);
 $tm-coralRed-solid: rgba(234, 68, 90, 1);
+// #ea445a
+
+//$tm-yellow-solid: rgba(240, 237, 116, 1); #F0ED74
+$tm-yellow-solid: rgba(250, 197, 80, 1);
+// #FAC550
 
 $tm-kanit: "Kanit", sans-serif;
 $tm-roboto: "Roboto", sans-serif;
-
-span.inline-coral {
-  color: $tm-coralRed-solid;
-}
-
-span.inline-bold {
-  font-family: $tm-kanit;
-  font-weight: 700;
-}

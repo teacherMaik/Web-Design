@@ -1,0 +1,27 @@
+// TeacherMaik Buttons
+.tm-btn-coral {
+  background-color: $tm-coralRed-solid;
+  color: $tm-white-solid;
+  padding: 1rem;
+}
+
+.tm-btn-teal {
+  background-color: $tm-teal-solid;
+  color: $tm-black-solid;
+  padding: 1rem;
+}
+
+.tm-btn-yellow {
+  background-color: $tm-yellow-solid;
+  color: $tm-black-solid;
+  padding: 1rem;
+}
+
+span.inline-coral {
+  color: $tm-coralRed-solid;
+}
+
+span.inline-bold {
+  font-family: $tm-kanit;
+  font-weight: 700;
+}

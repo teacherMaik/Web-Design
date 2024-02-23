@@ -1,9 +1,11 @@
 @import 'config';
+@import 'utilities';
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: $tm-roboto;
 }
 
 :root {
@@ -26,10 +28,7 @@ a {
 
 h1, h2 {
   font-family: $tm-kanit;
-}
-
-p, h3, h4 {
-  font-family: $tm-roboto;
+  font-weight: 500;
 }
 
 #tm-navbar {
@@ -102,37 +101,112 @@ p, h3, h4 {
     align-items: center;
     justify-content: space-evenly;
 
-    .intro {
-      width: 42%;
-      line-height: 4rem;
-
-      h1, h2 {
-        font-size: 7rem;
-        color: $tm-white-solid;
-        font-weight: 300;
-        line-height: 7rem;
-      }
-
-      h2 {
-        margin-bottom: 1rem;
-        color: $tm-coralRed-solid;
-      }
-
-      p {
-        font-size: 3rem;
-
-
-        span {
-          color: $tm-teal-solid;
+    &.home {
+      .intro {
+        width: 42%;
+        line-height: 4rem;
+  
+        h1, h2 {
+          font-size: 7rem;
+          color: $tm-white-solid;
+          line-height: 7rem;
         }
+  
+        h2 {
+          margin-bottom: 1rem;
+          color: $tm-coralRed-solid;
+        }
+  
+        p {
+          font-size: 3rem;
+  
+  
+          span {
+            color: $tm-teal-solid;
+          }
+        }
+      }
+  
+      .display {
+        width: 50%;
+        font-size: 7rem;
+        font-family: $tm-kanit;
+        font-weight: 400;
       }
     }
 
-    .display {
-      width: 50%;
-      font-size: 7rem;
-      font-family: $tm-kanit;
-      font-weight: 400;
+    &.webs {
+      background-color: $tm-black-solid;
+      color: $tm-white-solid;
+
+      .intro {
+        width: 60%;;
+
+        h1 {
+          font-size: 7rem;
+        }
+
+        h2 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 2.1rem;
+          text-align: justify;
+          word-spacing: 0.7rem;
+        }
+
+        h1, h2, p {
+          margin-bottom: 2rem;
+        }
+      }
+
+      .display {
+        width: 21%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          li {
+            width: 100%;
+            padding: 1rem;
+
+            a {
+              display: block;
+              width: 100%;
+              font-size: 2.1rem;
+              font-weight: 500;
+              border-radius: 21px;
+              text-align: right;
+              border: 2px solid transparent;
+
+              &.tm-btn-teal:hover {
+                border: 2px solid $tm-teal-solid;
+                color: $tm-teal-solid;
+                background-color: $tm-black-solid;
+              }
+
+              &.tm-btn-coral:hover {
+                border: 2px solid $tm-coralRed-solid;
+                color: $tm-coralRed-solid;
+                background-color: $tm-black-solid;
+              }
+
+              &.tm-btn-yellow:hover {
+                border: 2px solid $tm-yellow-solid;
+                color: $tm-yellow-solid;
+                background-color: $tm-black-solid;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -141,7 +215,6 @@ p, h3, h4 {
   position: relative;
   background-color: $tm-white-solid;
   color: $tm-black-solid;
-  font-family: $tm-roboto;
   font-size: 3rem;
 
   .tm-home-content-container {
@@ -160,7 +233,6 @@ p, h3, h4 {
       h4 {
         text-align: justify;
         font-size: 2.1rem;
-        font-family: $tm-roboto;
         line-height: 3rem;
       }
     }
@@ -301,97 +373,46 @@ p, h3, h4 {
   }
 }
 
-.webs {
-  background-color: $tm-white-solid;
-  color: $tm-black-solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 7rem;
 
-  .webs-intro-heading {
-    margin-top: 70px;
-    height: 50vh;
+
+.webs-gallery {
+  position: relative;
+  padding: 0 7rem;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &-item {
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0 7rem;
-    width: 84%;
 
-    h1 {
-      font-size: 7rem;
-    }
-
-    h2 {
-      font-size: 3.6rem;
-    }
-
-    p {
-      width: 84%;
-      font-size: 2rem;
-      text-align: justify;
-    }
-  }
-
-  .webs-gallery {
-    position: relative;
-    width: 84%;
-    padding: 0 7rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-
-    &-item {
+    &-container {
       position: relative;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr 2fr;
       align-items: center;
-      width: 90%;
-      background-color: $tm-black-solid;
-      border-radius: 7px;
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 99%;
-        width: 2%;
-        aspect-ratio: 1/1;
-        background-color: $tm-coralRed-solid;
-        border-radius: 50%;
-      }
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: -7%;
-        left: 97%;
-        width: 6%;
-        aspect-ratio: 1/1;
-        background-color: $tm-white-solid;
-        border-radius: 50%;
-      }
-
-      .webs-gallery-img-container {
+      .webs-gallery-img {
+        width: 100%;
         position: relative;
-        padding: 2rem;
-        display: flex;
 
-        
         img {
           width: 100%;
-          border: 7px solid $tm-white-solid;
-          border-radius: 7px;
+          border-radius: 14px;
         }
       }
 
       .webs-gallery-text {
+        position: relative;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 1rem 3rem;
+        padding: 1rem 7rem;
+        color: $tm-black-solid;
 
         h3 {
           margin-bottom: 1rem;
@@ -399,7 +420,7 @@ p, h3, h4 {
           a {
             font-family: $tm-kanit;
             font-size: 4.2rem;
-            color: $tm-white-solid;
+            color: $tm-black-solid;
 
             &:hover {
               color: $tm-coralRed-solid;
@@ -409,14 +430,36 @@ p, h3, h4 {
 
         p {
           text-align: justify;
-          color: $tm-white-solid;
           font-size: 1.8rem;
-          padding-right: 7rem;
+          margin-bottom: 2rem;
+        }
+
+        .dot-outer {
+          display: block;
+          position: absolute;
+          bottom: 7px;
+          right: 7px;
+          width: 42px;
+          aspect-ratio: 1/1 ;
+          border-radius: 50%;
+          background-color: $tm-black-solid;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .dot-inner {
+            display: block;
+            width: 14px;
+            aspect-ratio: 1/1 ;
+            border-radius: 50%;
+            background-color: $tm-coralRed-solid;
+          }
         }
       }
     }
   }
 }
+
 
 footer {
   padding: 1rem 3rem;
@@ -441,7 +484,6 @@ footer {
     }
 
     h3 {
-      font-family: $tm-roboto;
       font-size: 1.3rem;
       font-weight: 300;
       padding: 0.3rem;
@@ -457,7 +499,6 @@ footer {
     a {
       padding: 0.3rem;
       color: $tm-white-solid;
-      font-family: $tm-roboto;
       font-size: 1.3rem;
       font-weight: 300;
 
