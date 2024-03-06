@@ -3,114 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A portfolio of my Web Design projects with HTML nd CSS with both vanilla javascript and jquery.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+  <meta name="description" content="A study of flexbox and grid layouts using Mondrian paintings as a great way to really learn and understand CSS">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" type="image/x-icon" href="../img/tm-favicon.ico">
   <script src="https://kit.fontawesome.com/43e3be112e.js" crossorigin="anonymous"></script>
-  <title>Teacher Maik | Web Design Portfolio</title>
+  <title>Recreate Mondrian paintings as a great way to learn CSS</title>
 </head>
 <body>
   <nav id="tm-navbar" class="top">
     <div class="tm-brand">
-      <img src="img/Teacher-Maik-Logo.png" alt="">
+      <a href="../"><img src="../img/Teacher-Maik-Logo.png" alt="Michael Thomas Bennett, aka Teacher Maik, Web Development Portfolio"></a>
     </div>
     <ul class="tm-main-menu">
-      <li><a href="">CSS</a></li>
+      <li><a href="/">CSS</a></li>
       <li><a href="">javascript</a></li>
       <li><a href="">games</a></li>
-      <li><a href="">webs</a></li>
+      <li><a href="../my-webs.html">webs</a></li>
     </ul>
   </nav>
 
-  <section id="tm-hero-home">
-    <div class="hero-content">
-      <div class="intro">
-        <h1>webDev</h1>
-        <h2>Portfolio</h2>
-        <p>Teacher gone <span>programmer</span>,</p>
-        <p>gamer and life long learner</p>
-      </div>
+  <section id="tm-hero" class="mondrian">
+    <div class="hero-content mondrian">
       <div class="display">
-        <h3 id="tm-type-writer"></h3>
+        <img src="../img/mondrian-gallery.png" alt="">
+      </div>
+      <div class="intro">
+        <h1>Mondrian Art</h1>
+        <p>I like creating things and <span class="inline-coral">have always enjoyed drawing, painting and math</span>. I even wanted to be an architect once upon a time! Needless to say, I enjoy playing around with CSS almost too much. Check out some <span class="inline-coral">flex vs grid</span> studies I have done, <span class="inline-coral">artwork</span> and little <span class="inline-coral">animated features</span> I use in different webs!</p>
+        <h2>I have recreated this piece both with Flexbox and Grid.</h2>
+        <div class="mondrian-buttons">
+          <ul>
+            <li><a href="" class="tm-btn-white btn-scroll-down">Flexbox</a></li>
+            <li><a href="" class="tm-btn-white-border btn-scroll-down">Grid</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="tm-home-content">
-    <div class="tm-home-content-container">
-      <div class="tm-presentation">
-        <h4>Born and raised in the United States and moved to Madrid Spain at 20 years old and graduated from <em>Universidad Compluetnse de Madird</em> with a teaching degree. Over the course of 17 years in education I have shifted towards education innovation, teacher training and curriculum design, focused primarily on games and gamification. My passion for teaching and learning has led me to the world of programming. Within this portfolio you can see my skills and projects with front-end web development.</h4>
-      </div>
-      <div class="tm-presentation-cards">
-        <div class="tm-card first">
-          <h3>2015<span class="inline-coral">•</span>2019</h3>
-          <div class="languages">
-            <p>Google Sheets</p>
-            <p>Google Apps Script</p>
-            <p>HTML</p>
-            <p>CSS</p>
-          </div>
-        </div>
-        <div class="time-line">
-          <div class="time-line-end-buffer"></div>
-          <div class="time-line-end-dot"></div>
-          <div class="time-line-line"></div>
-          <div class="time-line-end-dot last"></div>
-          <div class="time-line-end-buffer last"></div>
-        </div>
-        <div class="tm-card">
-          <h3>2020</h3>
-          <div class="languages">
-            <p>42 School Madrid</p>
-            <p>C</p>
-            <p>Unix</p>
-            <p>Git</p>
-          </div>
-        </div>
-        <div class="time-line">
-          <div class="time-line-end-buffer"></div>
-          <div class="time-line-end-dot"></div>
-          <div class="time-line-line"></div>
-          <div class="time-line-end-dot last"></div>
-          <div class="time-line-end-buffer last"></div>
-        </div>
-        <div class="tm-card">
-          <h3>2021<span class="inline-coral">•</span>2024</h3>
-          <div class="languages">
-            <p>SASS</p>
-            <p>node</p>
-            <p>Javascript & Jquery</p>
-            <p>React</p>
-          </div>
-        </div>
-      </div>
+  <section id="mondrian-flex">
+    <div class="mondrian">
 
-      <div class="tm-home-pic">
-        <img src="/dist/img/Circle Maik.png" alt="">
-      </div>
+    </div>
+    <div class="info">
+      
+    </div>
+  </section>
+
+  <section id="mondrian-grid">
+
+  </section>
+
+  <section class="footer-specs css-portfolio">
+    <div class="webs-hero">
+      <p>Hero Section 100vh and display flex-column with centered container with display flex-row.</p>
+    </div>
+    <div class="webs-gallery">
+      <p>This pre-footer as well as the footer are display flex with some global padding as well as padding for each div.</p>
+    </div>
+    <div class="home-spec">
+      <p>This page is pure SASS and some jquery.</p>
     </div>
   </section>
 
   <footer>
     <div class="info">
       <div class="social">
-        <a href=""><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+        <a href="https://github.com/teacherMaik" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/teachermaik/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/TeacherMaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCLTvAgvSy7ViRi7yAe0ogDA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.pinterest.es/TeacherMaik/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
       </div>
       <h3>d.michaelthomasbennett@gmail.com</h3>
       <h3>Madrid, Spain</h3>
     </div>
-    <div class="webs">
-      <a href="https://www.vindrogames.com/">Vindrogames</a>
-      <a href="https://terraturca.es/">Terra Turca Imports</a>
-      <a href="https://ludotecaenlanube.com/">Ludoteca en la Nube</a>
+    <div class="web-links">
+      <a href="https://www.vindrogames.com/" target="_blank">Vindrogames</a>
+      <a href="https://terraturca.es/" target="_blank">Terra Turca Imports</a>
+      <a href="https://ludotecaenlanube.com/" target="_blank">Ludoteca en la Nube</a>
     </div>
   </footer>
 
-  <script src="js/index.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="../js/index.js" type="text/javascript" charset="UTF-8"></script>
   
 </body>
 </html>

@@ -132,7 +132,7 @@ h1, h2 {
       }
     }
 
-    &.webs {
+    &.webs, &.css-portfolio {
       background-color: $tm-black-solid;
       color: $tm-white-solid;
 
@@ -199,6 +199,91 @@ h1, h2 {
                 border: 2px solid $tm-yellow-solid;
                 color: $tm-yellow-solid;
                 background-color: $tm-black-solid;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.mondrian {
+      position: relative;
+
+      .display {
+        width: 58%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        img {
+          display: block;
+          width: 60%;
+        }
+      }
+
+      .intro {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 42%;
+
+        h1 {
+          font-size: 4.2rem;
+          justify-self: flex-start;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          font-size: 2.1rem;
+        }
+
+        .mondrian-buttons {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          align-self: flex-end;
+          display: flex;
+          justify-content: flex-end;
+
+          ul {
+            width: 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            li {
+              width: 100%;
+              padding: 1.7rem 1rem;
+
+              a {
+                display: block;
+                width: 100%;
+                font-size: 2.1rem;
+                font-weight: 500;
+                border-radius: 21px;
+                text-align: right;
+
+                &.tm-btn-white {
+                  border: 2px solid $tm-white-solid;
+
+                  &:hover {
+                    background-color: $tm-black-solid;
+                    color: $tm-white-solid;
+                    border: 2px solid $tm-white-solid
+                  }
+                }
+
+                &.tm-btn-white-border:hover {
+                  background-color: $tm-white-solid;
+                  color: $tm-black-solid;
+                  border: 2px solid $tm-black-solid;
+                }
               }
             }
           }
@@ -370,8 +455,6 @@ h1, h2 {
   }
 }
 
-
-
 .webs-gallery {
   position: relative;
   padding: 0 7rem;
@@ -465,6 +548,9 @@ h1, h2 {
   }
 }
 
+@import 'mondrian';
+
+
 section.footer-specs {
   position: relative;
   background-color: $tm-coralRed-solid;
@@ -472,6 +558,10 @@ section.footer-specs {
   display: flex;
   justify-content: space-evenly;
 
+  &.css-portfolio {
+    background-color: $tm-yellow-solid;
+    color: $tm-black-solid;
+  }
   > div {
     width: 33%;
     padding: 1rem 2rem;
