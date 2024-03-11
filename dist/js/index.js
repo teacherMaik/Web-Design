@@ -1,12 +1,10 @@
-
-
+// typewrite script for front page
 const typeWriterWords = ["JAVASCRIPT", "JQUERY", "SASS•CSS", "BOOTSTRAP", "TAILWIND", "INKSCAPE"];
 const typeWriterEl = document.getElementById('tm-type-writer');
 
 let typing = true;
 let word = 0;
 const sleepTime = 100;
-
 
 // sleep Function for pause. Can be used for different times by modifying the time input
 function sleep(ms) {
@@ -34,17 +32,14 @@ const writeLoop = async () => {
       await sleep(42)
       letter--;
     }
-    console.log("waited");
     
     if (word == typeWriterWords.length - 1) {
-      console.log("resetting word value");
       word = 0;
     } else {
       word++;
     }
   }
 };
-
 
 // Checks to see if typewriter div is in viewport
 function isInViewport(el) {
@@ -65,7 +60,7 @@ if (window.location.pathname == "/" && isInViewport(typeWriterEl)) {
 
 // Smoothscroll with jQuery
 // Conditional to check if navigating my-webs page
-if (window.location.pathname == "/my-webs") {
+if (window.location.pathname == "/my-webs" || window.location.pathname == "/my-webs.html") {
 
   // Gets all outer dots by scroll-top class and adds click function
   $('.btn-scroll-top').on('click', function(e) {
@@ -92,4 +87,99 @@ if (window.location.pathname == "/my-webs") {
     }
   });
 }
+
+// Footer specs Elements
+const specsBtns = document.querySelectorAll('.specs-btn');
+
+specsBtns.forEach(specsBtn => {
+
+  specsBtn.addEventListener('click', (e) => {
+
+    console.log(e.target.id);
+
+    switch (e.target.id) {
+
+      case 'tm-home-specs-button':
+        const homeSpecsBtn = document.getElementById('tm-home-specs-button');
+        const homeSpecs = document.getElementById('tm-home-specs');
+        const homeSpecsDivs = document.querySelectorAll('#tm-home-specs div');
+
+        if (!homeSpecsBtn.classList.contains('active')) {
+          homeSpecsBtn.classList.add('active');
+          homeSpecsBtn.innerHTML = "Remove Page Specs";
+          homeSpecs.classList.add('active');
+          
+          homeSpecsDivs.forEach((div, index) => {
+      
+            setTimeout(() => {
+      
+              div.classList.add('active');
+            }, index * 420);
+          });
+        } else {
+          homeSpecsDivs.forEach((div, index) => {
+  
+            setTimeout(() => {
+      
+              div.classList.remove('active');
+            }, index * 210);
+          })
+      
+          setTimeout(() => {
+      
+            homeSpecsBtn.innerHTML = "Show Page Specs";
+            homeSpecs.classList.remove('active');
+            setTimeout(() => {
+      
+              homeSpecsBtn.classList.remove('active');
+            }, 200);
+          }, 800);
+        }
+        break;
+      
+      case 'tm-webs-specs-button':
+        const websSpecsBtn = document.getElementById('tm-webs-specs-button');
+        const websSpecs = document.getElementById('tm-webs-specs');
+        const websSpecsDivs = document.querySelectorAll('#tm-webs-specs div');
+        
+        if (!websSpecsBtn.classList.contains('active')) {
+          websSpecsBtn.classList.add('active');
+          websSpecsBtn.innerHTML = "Remove Page Specs";
+          websSpecs.classList.add('active');
+          
+          websSpecsDivs.forEach((div, index) => {
+      
+            setTimeout(() => {
+      
+              div.classList.add('active');
+            }, index * 420);
+          });
+        } else {
+          websSpecsDivs.forEach((div, index) => {
+  
+            setTimeout(() => {
+      
+              div.classList.remove('active');
+            }, index * 210);
+          })
+      
+          setTimeout(() => {
+      
+            websSpecsBtn.innerHTML = "Show Page Specs";
+            websSpecs.classList.remove('active');
+            setTimeout(() => {
+      
+              websSpecsBtn.classList.remove('active');
+            }, 200);
+          }, 800);
+        }
+        break;
+
+      default:
+        break;
+    };
+  });
+})
+
+
 

@@ -17,6 +17,19 @@
   padding: 1rem;
 }
 
+.tm-btn-white {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.tm-btn-white-border {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  padding: 1rem;
+}
+
 span.inline-coral {
   color: rgb(234, 68, 90);
 }
@@ -24,6 +37,12 @@ span.inline-coral {
 span.inline-bold {
   font-family: "Kanit", sans-serif;
   font-weight: 700;
+}
+
+span.inline-bold-black {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
 }
 
 * {
@@ -137,44 +156,44 @@ h1, h2 {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
 }
-#tm-hero .hero-content.webs {
+#tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-#tm-hero .hero-content.webs .intro {
+#tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
   width: 60%;
 }
-#tm-hero .hero-content.webs .intro h1 {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1 {
   font-size: 7rem;
 }
-#tm-hero .hero-content.webs .intro h2 {
+#tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2 {
   font-size: 3rem;
 }
-#tm-hero .hero-content.webs .intro p {
+#tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p {
   font-size: 2.1rem;
   text-align: justify;
   word-spacing: 0.7rem;
 }
-#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p {
   margin-bottom: 2rem;
 }
-#tm-hero .hero-content.webs .display {
+#tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
   width: 21%;
   height: 100%;
   display: flex;
   align-items: flex-end;
 }
-#tm-hero .hero-content.webs .display ul {
+#tm-hero .hero-content.webs .display ul, #tm-hero .hero-content.css-portfolio .display ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#tm-hero .hero-content.webs .display ul li {
+#tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li {
   width: 100%;
   padding: 1rem;
 }
-#tm-hero .hero-content.webs .display ul li a {
+#tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a {
   display: block;
   width: 100%;
   font-size: 2.1rem;
@@ -183,20 +202,91 @@ h1, h2 {
   text-align: right;
   border: 2px solid transparent;
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-teal:hover {
   border: 2px solid rgb(116, 240, 237);
   color: rgb(116, 240, 237);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-coralRed:hover {
   border: 2px solid rgb(234, 68, 90);
   color: rgb(234, 68, 90);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-yellow:hover {
   border: 2px solid rgb(250, 197, 80);
   color: rgb(250, 197, 80);
   background-color: rgb(0, 0, 0);
+}
+#tm-hero .hero-content.mondrian {
+  position: relative;
+}
+#tm-hero .hero-content.mondrian .display {
+  width: 58%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#tm-hero .hero-content.mondrian .display img {
+  display: block;
+  width: 60%;
+}
+#tm-hero .hero-content.mondrian .intro {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+}
+#tm-hero .hero-content.mondrian .intro h1 {
+  font-size: 4.2rem;
+  justify-self: flex-start;
+  margin-bottom: 1rem;
+}
+#tm-hero .hero-content.mondrian .intro p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#tm-hero .hero-content.mondrian .intro h2 {
+  font-size: 2.1rem;
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li {
+  width: 100%;
+  padding: 1.7rem 1rem;
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li a {
+  display: block;
+  width: 100%;
+  font-size: 2.1rem;
+  font-weight: 500;
+  border-radius: 21px;
+  text-align: right;
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li a.tm-btn-white {
+  border: 2px solid rgb(255, 255, 255);
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li a.tm-btn-white:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+#tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li a.tm-btn-white-border:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 #tm-home-content {
@@ -420,27 +510,96 @@ h1, h2 {
   background-color: rgb(234, 68, 90);
 }
 
+#mondrian-flex, #mondrian-grid {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#tm-hero-tr3s {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+#tm-hero-tr3s #tr3s-container {
+  width: 100%;
+  height: 84%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+#tm-hero-tr3s #tr3s-container #tr3s-board {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#tm-hero-tr3s #tr3s-container #tr3s-board .tr3s-card {
+  background-color: white;
+  margin: 1rem;
+}
+
 section.footer-specs {
   position: relative;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 50%;
+}
+section.footer-specs button {
+  position: relative;
+  border-radius: 42px;
+  border: none;
+  cursor: pointer;
+  z-index: 7;
+}
+section.footer-specs button:hover, section.footer-specs button.active {
+  color: rgb(116, 240, 237);
+  background-color: rgb(0, 0, 0);
+}
+section.footer-specs .page-specs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 42px;
   background-color: rgb(234, 68, 90);
-  padding: 2rem 5rem;
+  color: white;
+  z-index: 3;
+  width: 100%;
+  height: 0px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  transition: 0.42s ease;
+  overflow: hidden;
 }
-section.footer-specs > div {
-  width: 33%;
-  padding: 1rem 2rem;
+section.footer-specs .page-specs.active {
+  height: 420px;
+  padding: 2rem;
 }
-section.footer-specs > div p {
+section.footer-specs .page-specs > div {
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  font-size: 18px;
   text-align: justify;
-  font-size: 1.5rem;
+  opacity: 0;
+  transition: 0.42s ease;
 }
-section.footer-specs > div p a {
+section.footer-specs .page-specs > div.active {
+  opacity: 1;
+}
+section.footer-specs .page-specs > div a {
   color: rgb(0, 0, 0);
   font-weight: 500;
 }
-section.footer-specs > div p a:hover {
-  color: rgb(255, 255, 255);
+section.footer-specs .page-specs > div a:hover {
+  color: rgb(61, 61, 61);
+}
+section.footer-specs .page-specs > div:nth-child(2), section.footer-specs .page-specs > div:nth-child(3) {
+  border-top: 1px solid white;
 }
 
 footer {

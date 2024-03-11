@@ -17,6 +17,19 @@
   padding: 1rem;
 }
 
+.tm-btn-white {
+  background-color: $tm-white-solid;
+  color: $tm-black-solid;
+  padding: 1rem;
+}
+
+.tm-btn-white-border {
+  background-color: $tm-black-solid;
+  color: $tm-white-solid;
+  border: 2px solid $tm-white-solid;
+  padding: 1rem;
+}
+
 span.inline-coral {
   color: $tm-coralRed-solid;
 }
@@ -24,4 +37,10 @@ span.inline-coral {
 span.inline-bold {
   font-family: $tm-kanit;
   font-weight: 700;
+}
+
+span.inline-bold-black {
+  font-family: $tm-kanit;
+  font-weight: 700;
+  color: $tm-black-solid;
 }

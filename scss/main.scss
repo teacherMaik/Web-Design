@@ -132,7 +132,7 @@ h1, h2 {
       }
     }
 
-    &.webs {
+    &.webs, &.css-portfolio {
       background-color: $tm-black-solid;
       color: $tm-white-solid;
 
@@ -199,6 +199,91 @@ h1, h2 {
                 border: 2px solid $tm-yellow-solid;
                 color: $tm-yellow-solid;
                 background-color: $tm-black-solid;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.mondrian {
+      position: relative;
+
+      .display {
+        width: 58%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        img {
+          display: block;
+          width: 60%;
+        }
+      }
+
+      .intro {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 42%;
+
+        h1 {
+          font-size: 4.2rem;
+          justify-self: flex-start;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        h2 {
+          font-size: 2.1rem;
+        }
+
+        .mondrian-buttons {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          align-self: flex-end;
+          display: flex;
+          justify-content: flex-end;
+
+          ul {
+            width: 42%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            
+            li {
+              width: 100%;
+              padding: 1.7rem 1rem;
+
+              a {
+                display: block;
+                width: 100%;
+                font-size: 2.1rem;
+                font-weight: 500;
+                border-radius: 21px;
+                text-align: right;
+
+                &.tm-btn-white {
+                  border: 2px solid $tm-white-solid;
+
+                  &:hover {
+                    background-color: $tm-black-solid;
+                    color: $tm-white-solid;
+                    border: 2px solid $tm-white-solid
+                  }
+                }
+
+                &.tm-btn-white-border:hover {
+                  background-color: $tm-white-solid;
+                  color: $tm-black-solid;
+                  border: 2px solid $tm-black-solid;
+                }
               }
             }
           }
@@ -370,8 +455,6 @@ h1, h2 {
   }
 }
 
-
-
 .webs-gallery {
   position: relative;
   padding: 0 7rem;
@@ -465,28 +548,74 @@ h1, h2 {
   }
 }
 
+@import 'mondrian';
+@import 'tr3s';
+
+
 section.footer-specs {
   position: relative;
-  background-color: $tm-coralRed-solid;
-  padding: 2rem 5rem;
-  display: flex;
-  justify-content: space-evenly;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 50%;
 
-  > div {
-    width: 33%;
-    padding: 1rem 2rem;
+  button {
+    position: relative;
+    border-radius: 42px;
+    border: none;
+    cursor: pointer;
+    z-index: 7;
+  }
 
-    p {
+  button:hover, button.active {
+    color: $tm-teal-solid;
+    background-color: $tm-black-solid
+  }
+
+  .page-specs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 42px;
+    background-color: $tm-coralRed-solid;
+    color: white;
+    z-index: 3;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.42s ease;
+    overflow: hidden;
+
+    &.active {
+      height: 420px;
+      padding: 2rem;
+    }
+
+    > div {
+      margin-bottom: 2rem;
+      padding-top: 1rem;
+      font-size: 18px;
       text-align: justify;
-      font-size: 1.5rem;
+      opacity: 0;
+      transition: 0.42s ease;
+
+      &.active {
+        opacity: 1;
+      }
 
       a {
         color: $tm-black-solid;
         font-weight: 500;
 
         &:hover {
-          color: $tm-white-solid;
+          color: $tm-darkGray-solid;
         }
+      }
+
+      &:nth-child(2), &:nth-child(3) {
+
+        border-top: 1px solid white;
       }
     }
   }

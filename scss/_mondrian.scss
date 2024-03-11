@@ -1,0 +1,8 @@
+#mondrian-flex, #mondrian-grid {
+  position: relative;
+  height: 100vh;
+  background-color: $tm-white-solid;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+}
