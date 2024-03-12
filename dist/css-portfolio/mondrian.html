@@ -33,8 +33,8 @@
         <h2>I have recreated this piece both with Flexbox and Grid.</h2>
         <div class="mondrian-buttons">
           <ul>
-            <li><a href="" class="tm-btn-white btn-scroll-down">Flexbox</a></li>
-            <li><a href="" class="tm-btn-white-border btn-scroll-down">Grid</a></li>
+            <li><a href="#mondrian-flex" class="tm-btn-white btn-scroll-down">Flexbox</a></li>
+            <li><a href="#mondrian-grid" class="tm-btn-white-border btn-scroll-down">Grid</a></li>
           </ul>
         </div>
       </div>
@@ -42,27 +42,297 @@
   </section>
 
   <section id="mondrian-flex">
-    <div class="mondrian">
-
+    <div class="mondrian-piece-container">
+      <img src="../img/mondrian-gallery.png" alt="" class="small-screen">
+      <div class="container-flex">
+        <div class="flex-row-1">
+          <div class="flex-item flex-item-1">
+            <p>Row 1 Col 1</p>
+            <div class="dim-flex width width-top">
+              <div class="width-left">
+                <div class="line"></div>
+              </div>
+              <div class="width-data">240px</div>
+              <div class="width-right">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="dim-flex height height-left">
+              <div class="height-top">
+                <div class="line"></div>
+              </div>
+              <div class="height-data">310.5px</div>
+              <div class="height-bottom">
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-item flex-item-2">
+            <p>Row 1 Col 2</p>
+            <div class="dim-flex width width-top">
+              <div class="width-left">
+                <div class="line"></div>
+              </div>
+              <div class="width-data">grow 1</div>
+              <div class="width-right">
+                <div class="line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row-2">
+          <div class="flex-column-1">
+            <div class="dim-flex height height-left-double">
+              <div class="height-top">
+                <div class="line"></div>
+              </div>
+              <div class="height-data">grow 1</div>
+              <div class="height-bottom">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="flex-item flex-item-3">
+              <p>Row 2 Col 1 Row 1</p>
+              <div class="dim-flex height height-left">
+                <div class="height-top">
+                  <div class="line"></div>
+                </div>
+                <div class="height-data">240px</div>
+                <div class="height-bottom">
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-item flex-item-4">
+              <p>Row 2 Col 1 Row 2</p>
+              <div class="dim-flex width width-bottom">
+                <div class="width-left">
+                  <div class="line"></div>
+                </div>
+                <div class="width-data">240px</div>
+                <div class="width-right">
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="dim-flex height height-left-data">grow-1</div>
+            </div>
+          </div>
+          <div class="flex-column-2">
+            <div class="dim-flex width width-bottom-double">
+              <div class="width-left">
+                <div class="line"></div>
+              </div>
+              <div class="width-data">270px</div>
+              <div class="width-right">
+                <div class="line"></div>
+              </div>
+            </div>
+            <div class="flex-item flex-item-5">
+              <p>Row 2 Col 2 Row 1</p>
+            </div>
+            <div class="flex-row-3">
+              <div class="flex-item flex-item-6">
+                <p>Row 2 Col 2 Row 2 Col 1</p>
+                <div class="dim-flex width width-bottom">
+                  <div class="width-left">
+                    <div class="line"></div>
+                  </div>
+                  <div class="width-data">148.5px</div>
+                  <div class="width-right">
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item flex-item-7">
+                <p>Row 2 Col 2 Row 2 Col 2</p>
+                <div class="dim-flex width width-bottom">
+                  <div class="width-left">
+                    <div class="line"></div>
+                  </div>
+                  <div class="width-data">grow 1</div>
+                  <div class="width-right">
+                    <div class="line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-column-3">
+            <div class="flex-item flex-item-8">
+              <p>Row 2<br><br>Col 3<br><br>Row 1</p>
+              <div class="dim-flex height height-right">
+                <div class="height-top">
+                  <div class="line"></div>
+                </div>
+                <div class="height-data">240px</div>
+                <div class="height-bottom">
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-item flex-item-9">
+              <p>Row 2<br><br>Col 3<br><br>Row 2</p>
+              <div class="dim-flex height height-right">
+                <div class="height-top">
+                  <div class="line"></div>
+                </div>
+                <div class="height-data">grow 1</div>
+                <div class="height-bottom">
+                  <div class="line"></div>
+                </div>
+              </div>
+              <div class="dim-flex width width-bottom-data">grow-1</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="info">
-      
+      <h3 class="normal">You can toggle the dimensions on and off with the button on the right. The entire piece is 561 x 561px. I used a gap of 6.75px between all flex-items. The piece is broken up into 2 rows, each row with a different number of columns and/or rows. I used flex-grow: 1 to have the last element of each row/column to take up all remaining space.
+      </h3>
+      <h3 class="small-screen">
+        The Art pieces meassure 561px wide and 561px tall and therefore cannot fit on some mobile devices. On a bigger screen you could interact with the piece and see how the CSS Grid works. Try changing devices!
+      </h3>
+      <button id="mondrian-flex-toggle" class="tm-btn-coralRed">Toggle Dimensions</button>
     </div>
   </section>
 
   <section id="mondrian-grid">
-
+    <div class="mondrian-piece-container">
+      <img src="../img/mondrian-gallery.png" alt="" class="small-screen">
+      <div class="container-grid">
+        <div class="grid-item grid-item-1">
+          <p>Row 1 Col 1</p>
+          <div class="dim-grid width width-top">
+            <div class="width-left">
+              <div class="line"></div>
+            </div>
+            <div class="width-data">240px</div>
+            <div class="width-right">
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="dim-grid height height-left">
+            <div class="height-top">
+              <div class="line"></div>
+            </div>
+            <div class="height-data">310.5px</div>
+            <div class="height-bottom">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-2">
+          <p>Row 1 Col Span 3</p>
+          <div class="dim-grid width width-top">
+            <div class="width-left">
+              <div class="line"></div>
+            </div>
+            <div class="width-data">310.5px</div>
+            <div class="width-right">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-3">
+          <p>Row 2 Span 2 Col 2 Span 2</p>
+          <div class="dim-grid height height-left">
+            <div class="height-top">
+              <div class="line"></div>
+            </div>
+            <div class="height-data">220.5px</div>
+            <div class="height-bottom">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-4">
+          <p>Row 2 Col 4</p>
+        </div>
+        <div class="grid-item grid-item-5">
+          <p>Row 2<br><br>Col 4</p>
+          <div class="dim-grid height height-right">
+            <div class="height-top">
+              <div class="line"></div>
+            </div>
+            <div class="height-data">97.5px</div>
+            <div class="height-bottom">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-6">
+          <p>Row 3<br><br>Span 2<br><br>Col 4</p>
+          <div class="dim-grid height height-right">
+            <div class="height-top">
+              <div class="line"></div>
+            </div>
+            <div class="height-data">138.75px</div>
+            <div class="height-bottom">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-7">
+          <p>Row 4 Col 1</p>
+          <div class="dim-grid width width-bottom">
+            <div class="width-left">
+              <div class="line"></div>
+            </div>
+            <div class="width-data">240px</div>
+            <div class="width-right">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-8">
+          <p>Row 4 Col 2</p>
+          <div class="dim-grid width width-bottom">
+            <div class="width-left">
+              <div class="line"></div>
+            </div>
+            <div class="width-data">148.5px</div>
+            <div class="width-right">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item grid-item-9">
+          <p>Row 4 Col 3</p>
+          <div class="dim-grid width width-bottom">
+            <div class="width-left">
+              <div class="line"></div>
+            </div>
+            <div class="width-data">114px</div>
+            <div class="width-right">
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <h3 class="normal">You can toggle the dimensions on and off with the button on the right. The entire piece is 561 x 561px. I used a gap of 6.75px. Both the CSS and the HTML is mush simpler as I just specified pixels for the grid-template-colums and grid-template-rows, changing the background-color of each corresponding div.
+      </h3>
+      <h3 class="small-screen">
+        The Art pieces meassure 561px wide and 561px tall and therefore cannot fit on some mobile devices. On a bigger screen you could interact with the piece and see how the CSS Grid works. Try changing devices!
+      </h3>
+      <button id="mondrian-grid-toggle" class="tm-btn-coralRed">Toggle Dimensions</button>
+    </div>
   </section>
 
-  <section class="footer-specs css-portfolio">
-    <div class="webs-hero">
-      <p>Hero Section 100vh and display flex-column with centered container with display flex-row.</p>
-    </div>
-    <div class="webs-gallery">
-      <p>This pre-footer as well as the footer are display flex with some global padding as well as padding for each div.</p>
-    </div>
-    <div class="home-spec">
-      <p>This page is pure SASS and some jquery.</p>
+  <section class="footer-specs">
+    <button id="tm-home-specs-button" class="tm-btn-coralRed specs-btn">Show Page Specs</button>
+    <div id="tm-home-specs" class="page-specs">
+      <div class="portfolio-config">
+        <p>A section for each main element with centered flex containers to organize the content. Because of the Art piece size being 561 x 561px, they will not show below my 678px mobile breakpoint</p>
+      </div>
+      <div class="portfolio-specs">
+        <p>The dimensions that are shown around the Art piece are done with absolute positioning and are grid containers 2fr 2fr 2fr, each inner div displayed flex to center lines, text and borders.</p>
+      </div>
+      <div class="homepage-specs">
+        <p>The toggle buttons use javascript to simply toggle a className('toggle') for each dimension and text within each art piece item and Smooth scroll with JQUERY.</p>
+      </div>
     </div>
   </section>
 
