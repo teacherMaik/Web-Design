@@ -1,8 +1,379 @@
 #mondrian-flex, #mondrian-grid {
   position: relative;
-  height: 100vh;
   background-color: $tm-white-solid;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-bottom: 7rem;
+}
 
+.mondrian-piece-container {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  width: 670px;
+  height: 670px;
+  background-color: $tm-black-solid;
+  margin-bottom: 5rem;
+
+  img.small-screen {
+    width: 80%;
+    display: none;
+  }
+
+  p {
+    opacity: 0;
+    transition: 0.42s ease;
+
+    &.toggle {
+      opacity: 1;
+      transition: 0.42s ease;
+    }
+  }
+
+  // With Grid
+  .container-grid {
+    width: 561px;
+    height: 561px;
+    display: grid;
+    grid-gap: 6.75px;
+    grid-template-columns: 240px 148.5px 114px 37.5px;
+    grid-template-rows: 310.5px 97.5px 116.25px 16.5px;
+
+    .grid-item {
+      background-color: $mon-white;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-1 {
+        background-color: $mon-red;
+        color: white;
+      }
+
+      &-2 {
+        grid-column: span 3;
+        color: black;
+      }
+
+      &-3 {
+        grid-row: span 2;
+        color: black;
+      }
+
+      &-4 {
+        grid-column: span 2;
+        grid-row: span 2;
+        color: black;
+      }
+
+      &-5 {
+        background-color: $mon-blue;
+        color: white;
+      }
+
+      &-6 {
+        grid-row: span 2;
+        margin-top: 0.75px;
+        color: black;
+      }
+
+      &-7 {
+        color: black;
+      }
+
+      &-8 {
+        background-color: $mon-yellow;
+        color: black;
+      }
+
+      &-9 {
+        background-color: $mon-black;
+        color: white;
+      }
+    }
+  }
+
+  //With Flex
+  .container-flex {
+    width: 561px;
+    height: 561px;
+    display: flex;
+    flex-direction: column;
+    gap: 6.75px;
+    //grid-template-columns: 240px 148.5px 114px 37.5px;
+    //grid-template-rows: 310.5px 97.5px 116.25px 16.5px;
+  
+    .flex-item-1, .flex-item-2, .flex-item-3, .flex-item-4, .flex-item-5, .flex-item-6, .flex-item-7, .flex-item-8, .flex-item-9 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .flex-row-1 {
+      max-height: 310.5px;
+      display: flex;
+      flex-grow: 1;
+      gap: 6.75px;
+  
+      .flex-item-1 {
+        background-color: $mon-red;
+        width: 240px;
+      }
+  
+      .flex-item-2 {
+        background-color: $mon-white;
+        flex-grow: 1;
+        color: $tm-black-solid;
+      }
+    }
+  
+    .flex-row-2 {
+      max-height: 243.75px;
+      display: flex;
+      flex-grow: 1;
+      gap: 6.75px;
+  
+      .flex-column-1 {
+        position: relative;
+        width: 240px;
+        display: flex;
+        flex-direction: column;
+        gap: 6.75px;
+  
+        .flex-item-3 {
+          background-color: $mon-white;
+          width: 100%;
+          height: 220.5px;
+          color: $tm-black-solid;
+        }
+  
+        .flex-item-4 {
+          background-color: $mon-white;
+          flex-grow: 1;
+          color: $tm-black-solid;
+        }
+      }
+  
+      .flex-column-2 {
+        position: relative;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+        gap: 6.75px;
+  
+        .flex-item-5 {
+          background-color: $mon-white;
+          width: 100%;
+          height: 220.5px;
+          color: $tm-black-solid;
+        }
+  
+        .flex-row-3 {
+          width: 100%;
+          flex-grow: 1;
+          display: flex;
+          gap: 6.75px;
+  
+          .flex-item-6 {
+            background-color: $mon-yellow;
+            width: 148.5px;
+            color: $tm-black-solid;
+          }
+  
+          .flex-item-7 {
+            background-color: $mon-black;
+            flex-grow: 1;
+          }
+        }
+      }
+  
+      .flex-column-3 {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 7.5px;
+  
+        .flex-item-8 {
+          background-color: $mon-blue;
+          height: 97.5px;
+        }
+  
+        .flex-item-9 {
+          background-color: $mon-white;
+          flex-grow: 1;
+          color: $tm-black-solid;
+        }
+      }
+    }
+  }
+
+  // Width & Height dimensions for toggling
+  .width {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  
+    &-top {
+      top: -30px;
+    }
+  
+    &-bottom {
+      bottom: -30px;
+  
+      &-double {
+        bottom: -50px;
+      }
+    }
+  
+    &-left {
+      display: flex;
+      border-left: 1px solid $tm-white-solid;
+    }
+  
+    &-data {
+      color: $tm-white-solid;
+      text-align: center;
+      align-self: center;
+    }
+  
+    &-right {
+      display: flex;
+      border-right: 1px solid $tm-white-solid;
+    }
+  
+    .line {
+      height: 1px;
+      align-self: center;
+      width: 100%;
+      background-color: $tm-white-solid;
+    }
+  }
+  
+  .height {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+  
+    &-left {
+      left: -30px;
+  
+      &-double {
+        left: -50px;
+      }
+    }
+  
+    &-right { 
+      right: -30px;
+      grid-template-rows: 1fr 2fr 1fr;
+    }
+  
+    &-top {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid $tm-white-solid;
+    }
+  
+    &-data {
+      writing-mode: vertical-lr;
+      color: $tm-white-solid;
+      text-align: center;
+      align-self: center;
+      justify-self: center;
+    }
+  
+    &-bottom {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid $tm-white-solid;
+    }
+  
+    .line {
+      height: 100%;
+      width: 1px;
+      background-color: $tm-white-solid;
+    }
+  }
+  
+  .width-bottom-data {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+  
+  .height-left-data {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    color: white;
+    writing-mode: vertical-lr;
+    height: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;;
+  }
+  
+  .dim-flex, .dim-grid {
+    opacity: 0;
+    transition: 0.42s ease;
+  
+    &.toggle {
+      opacity: 1;
+      transition: 0.42s ease;
+    }
+  }
+}
+
+#mondrian-flex .info, #mondrian-grid .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  h3.normal {
+    display: block;
+    width: 70%;
+    text-align: justify;
+    color: $tm-black-solid;
+    font-family: $tm-roboto;
+    font-size: 2.4rem;
+  }
+
+  h3.small-screen {
+    text-align: justify;
+    color: $tm-black-solid;
+    font-family: $tm-roboto;
+    font-size: 2.4rem;
+    display: none;
+  }
+
+  button {
+    display: block;
+    padding: 1.7rem 1rem;
+    border: 2px solid $tm-coralRed-solid;
+    border-radius: 42px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $tm-black-solid;
+      color: $tm-teal-solid;
+      border: 2px solid $tm-black-solid;
+    }
+  }
 }

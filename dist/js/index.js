@@ -52,10 +52,43 @@ function isInViewport(el) {
   );
 }
 
-// Conditional to call write async function when typewriter div is in viewport
-if (window.location.pathname == "/" && isInViewport(typeWriterEl)) {
+// Conditional to check if on Home Page then call write async function when typewriter div is in viewport as well as create corner circles on cards
+if (window.location.pathname == "/") {
+  
+  if (isInViewport(typeWriterEl)) {
   writeLoop();
-}
+  }
+
+  const presentationCards = document.querySelectorAll('.tm-card');
+
+  if (window.innerWidth < 960) {
+    presentationCards.forEach(card => {
+
+      const outerCornerCircle = document.createElement('div');
+      outerCornerCircle.style.width = "21px";
+      outerCornerCircle.style.height = "21px";
+      outerCornerCircle.style.backgroundColor = "white";
+      outerCornerCircle.style.borderRadius = "50%";
+      outerCornerCircle.style.position = "absolute";
+      outerCornerCircle.style.bottom = "7px";
+      outerCornerCircle.style.right = "7px";
+
+      const innerCornerCircle = document.createElement('div');
+      innerCornerCircle.style.width = "7px";
+      innerCornerCircle.style.height = "7px";
+      innerCornerCircle.style.backgroundColor = "rgba(234, 68, 90, 1)";
+      innerCornerCircle.style.borderRadius = "50%";
+      innerCornerCircle.style.position = "absolute";
+      innerCornerCircle.style.bottom = "14px";
+      innerCornerCircle.style.right = "14px";
+      innerCornerCircle.style.zIndex = "7";
+
+
+      card.appendChild(innerCornerCircle);
+      card.appendChild(outerCornerCircle);
+    });
+  };
+};
 
 
 // Smoothscroll with jQuery
@@ -181,5 +214,43 @@ specsBtns.forEach(specsBtn => {
   });
 })
 
+if (window.location.pathname == '/css-portfolio/mondrian.html') {
 
+  let mondrianFlexToggle = document.getElementById('mondrian-flex-toggle');
+  let flexItems = document.querySelectorAll('.flex-item');
+  let dimensionsFlex = document.querySelectorAll('.dim-flex');
 
+  let modrianGridToggle = document.getElementById('mondrian-grid-toggle');
+  let gridItems = document.querySelectorAll('.grid-item');
+  let dimensionsGrid = document.querySelectorAll('.dim-grid');
+
+  mondrianFlexToggle.addEventListener('click', () => {
+  
+    flexItems.forEach(flexItem => {
+
+      setTimeout(() => {
+        flexItem.children[0].classList.toggle('toggle');
+      }, 420);
+    });
+
+    dimensionsFlex.forEach(flexDimension => {
+
+      flexDimension.classList.toggle('toggle');
+    });
+  });
+
+  modrianGridToggle.addEventListener('click', () => {
+
+    gridItems.forEach(item => {
+
+      setTimeout(() => {
+        item.children[0].classList.toggle('toggle');
+      }, 420);
+    });
+
+    dimensionsGrid.forEach(dimension => {
+
+      dimension.classList.toggle('toggle');
+    });
+  });
+};

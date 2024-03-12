@@ -91,6 +91,10 @@ h1, h2 {
   padding: 0 7rem;
   background-color: $tm-black-solid;
 
+  &.web {
+    padding: 0 5rem;
+  }
+
   .hero-content {
     width: 100%;
     display: flex;
@@ -99,6 +103,7 @@ h1, h2 {
     justify-content: space-evenly;
 
     &.home {
+
       .intro {
         width: 42%;
         line-height: 4rem;
@@ -126,18 +131,22 @@ h1, h2 {
   
       .display {
         width: 50%;
-        font-size: 7rem;
-        font-family: $tm-kanit;
-        font-weight: 400;
+
+        & h3 {
+          font-size: 9rem;
+          font-family: $tm-kanit;
+          font-weight: 500;
+        }
       }
     }
 
     &.webs, &.css-portfolio {
+      justify-content: space-between;
       background-color: $tm-black-solid;
       color: $tm-white-solid;
 
       .intro {
-        width: 60%;;
+        width: 60%;
 
         h1 {
           font-size: 7rem;
@@ -159,7 +168,7 @@ h1, h2 {
       }
 
       .display {
-        width: 21%;
+        width: 30%;
         height: 100%;
         display: flex;
         align-items: flex-end;
@@ -208,11 +217,11 @@ h1, h2 {
 
     &.mondrian {
       position: relative;
+      align-items: flex-start;
 
       .display {
         width: 58%;
         display: flex;
-        align-items: flex-end;
         justify-content: center;
 
         img {
@@ -227,6 +236,7 @@ h1, h2 {
         display: flex;
         flex-direction: column;
         width: 42%;
+        text-align: justify;
 
         h1 {
           font-size: 4.2rem;
@@ -244,7 +254,7 @@ h1, h2 {
         }
 
         .mondrian-buttons {
-          position: absolute;
+          position: relative;
           bottom: 0;
           width: 100%;
           align-self: flex-end;
@@ -331,7 +341,7 @@ h1, h2 {
         width: 100%;
         aspect-ratio: 1/1;
         background-color: $tm-black-solid;
-        border-radius: 7%;
+        border-radius: 14px;
         padding: 2.1rem;
         display: flex;
         flex-direction: column;
@@ -548,10 +558,6 @@ h1, h2 {
   }
 }
 
-@import 'mondrian';
-@import 'tr3s';
-
-
 section.footer-specs {
   position: relative;
   margin-left: 2rem;
@@ -670,3 +676,7 @@ footer {
     }
   }
 }
+
+@import 'mondrian';
+@import 'tr3s';
+@import 'mobile';
