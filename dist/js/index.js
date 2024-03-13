@@ -254,3 +254,4 @@ if (window.location.pathname == '/css-portfolio/mondrian.html') {
     });
   });
 };
+

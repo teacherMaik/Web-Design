@@ -235,6 +235,7 @@ h1, h2 {
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 42%;
         text-align: justify;
 
@@ -678,5 +679,5 @@ footer {
 }
 
 @import 'mondrian';
-@import 'tr3s';
+@import 'games';
 @import 'mobile';
