@@ -44,3 +44,14 @@ span.inline-bold-black {
   font-weight: 700;
   color: $tm-black-solid;
 }
+
+span.inline-teal-bold {
+  font-family: $tm-kanit;
+  font-weight: 700;
+  color: $tm-teal-solid;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
