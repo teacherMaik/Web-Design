@@ -1037,6 +1037,14 @@ footer .web-links a:hover {
 #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p {
   font-size: 18px;
 }
+#tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p a {
+  text-decoration: none;
+  color: rgb(234, 68, 90);
+  font-weight: 400;
+}
+#tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p a:hover {
+  color: rgb(116, 240, 237);
+}
 #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container {
   height: 21%;
   display: flex;
