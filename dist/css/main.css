@@ -974,8 +974,8 @@ footer .web-links a:hover {
 
 #tm-hero.game-42 .hero-content.forty-two {
   padding-top: 100px;
-  width: 70%;
-  justify-content: space-between;
+  width: 90%;
+  justify-content: space-evenly;
 }
 #tm-hero.game-42 .hero-content.forty-two .nums-42 {
   width: 50%;
@@ -1011,6 +1011,10 @@ footer .web-links a:hover {
 #tm-hero.game-42 .hero-content.forty-two .nums-42 .pos-42.filled.filled:hover {
   cursor: default;
 }
+#tm-hero.game-42 .hero-content.forty-two .nums-42 .pos-42.game-over {
+  background-color: rgb(234, 68, 90);
+  color: white;
+}
 #tm-hero.game-42 .hero-content.forty-two .display-42 {
   padding: 3rem;
   width: 50%;
@@ -1034,15 +1038,16 @@ footer .web-links a:hover {
   font-size: 18px;
 }
 #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container {
-  height: 42%;
+  height: 21%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42 {
   display: block;
-  width: 42%;
-  height: 28%;
+  min-width: 42%;
+  height: 84%;
   border-radius: 42px;
   justify-self: center;
   font-size: 21px;
@@ -1051,10 +1056,36 @@ footer .web-links a:hover {
 #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42:hover {
   background-color: rgb(116, 240, 237);
 }
+#tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42.game-over {
+  background-color: rgb(234, 68, 90);
+  color: white;
+}
+#tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42.game-over:hover {
+  background-color: rgb(250, 197, 80);
+  color: rgb(0, 0, 0);
+}
+#tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results {
+  display: flex;
+  justify-content: space-between;
+}
+#tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 21px;
+  color: white;
+}
+#tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container .current-game-42-points, #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container .prev-game-42-points, #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container .best-game-42-points {
+  color: rgb(116, 240, 237);
+}
 
 @media (max-width: 960px) {
   #tm-hero {
     padding: 0 2.1rem;
+  }
+  #tm-hero.game-42 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   #tm-hero .hero-content {
     flex-direction: column;
@@ -1092,6 +1123,19 @@ footer .web-links a:hover {
   }
   #tm-hero .hero-content.mondrian .mondrian-buttons ul {
     width: 30%;
+  }
+  #tm-hero .hero-content.forty-two {
+    flex-direction: row;
+    padding-left: 0;
+  }
+  #tm-hero .hero-content.forty-two .nums-42 {
+    width: 42%;
+  }
+  #tm-hero .hero-content.forty-two .display-42 {
+    width: 58%;
+  }
+  #tm-hero .hero-content.forty-two .display-42 .instructions-42 p {
+    margin-bottom: 3rem !important;
   }
   #tm-home-content .tm-home-content-container .tm-presentation {
     width: 80%;
@@ -1166,6 +1210,43 @@ footer .web-links a:hover {
   #tm-hero {
     padding: 0 1rem;
   }
+  #tm-hero.game-42 {
+    padding: 0;
+  }
+  #tm-hero.game-42 .hero-content.forty-two {
+    padding-top: 0;
+    width: 95%;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .nums-42 {
+    width: 40%;
+    justify-content: space-between;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .nums-42 .pos-42 {
+    margin: 0.1rem 0;
+    padding: 0.3rem 1rem;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .nums-42 .pos-42.filled {
+    margin: 0.1rem 0;
+    padding: 0.3rem 1rem;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 {
+    width: 60%;
+    padding: 1rem;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 h1 {
+    font-size: 28px;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 h2 {
+    font-size: 18px;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p {
+    font-size: 14px;
+    margin-bottom: 2rem;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container {
+    font-size: 16px;
+    font-weight: 300;
+  }
   #tm-hero .hero-content {
     flex-direction: column;
     align-items: flex-start;
@@ -1197,6 +1278,9 @@ footer .web-links a:hover {
   }
   #tm-hero .hero-content.mondrian .intro h2 {
     margin-bottom: 2rem;
+  }
+  #tm-hero .hero-content.forty-two {
+    flex-direction: row;
   }
   #tm-home-content .tm-home-content-container .tm-presentation {
     width: 100%;
