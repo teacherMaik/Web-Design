@@ -1134,6 +1134,7 @@ footer .web-links a:hover {
   }
   #tm-hero .hero-content.forty-two {
     flex-direction: row;
+    align-items: flex-end;
     padding-left: 0;
   }
   #tm-hero .hero-content.forty-two .nums-42 {
