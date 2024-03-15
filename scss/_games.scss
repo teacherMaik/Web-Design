@@ -32,8 +32,8 @@
 
   .hero-content.forty-two {
     padding-top: 100px;
-    width: 70%;
-    justify-content: space-between;
+    width: 90%;
+    justify-content: space-evenly;
 
     .nums-42 {
       width: 50%;
@@ -72,6 +72,11 @@
             cursor: default;
           }
         }
+
+        &.game-over {
+          background-color: $tm-coralRed-solid;
+          color: white;
+        }
       }
     }
 
@@ -102,22 +107,50 @@
       }
 
       .game-42-btn-container {
-        height: 42%;
+        height: 21%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 2rem;
 
         #showcase-42 {
           display: block;
-          width: 42%;
-          height: 28%;
+          min-width: 42%;
+          height: 84%;
           border-radius: 42px;
           justify-self: center;
           font-size: 21px;
           font-family: $tm-kanit;
-  
+
           &:hover {
             background-color: $tm-teal-solid;
+          }
+
+          &.game-over {
+            background-color: $tm-coralRed-solid;
+            color: white;
+
+            &:hover {
+              background-color: $tm-yellow-solid;
+              color: $tm-black-solid;
+            }
+          }
+        }
+      }
+
+      .game-42-results {
+        display: flex;
+        justify-content: space-between;
+        
+        &-container {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 21px;
+          color: white;
+
+          .current-game-42-points, .prev-game-42-points, .best-game-42-points {
+            color: $tm-teal-solid;
           }
         }
       }
