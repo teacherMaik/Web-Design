@@ -648,6 +648,14 @@ footer {
         &:hover {
           color: $tm-coralRed-solid;
         }
+
+        &.fa-twitter:hover {
+          color: $tm-teal-solid;
+        }
+
+        &.fa-instagram:hover {
+          color: $tm-yellow-solid;
+        }
       }
     }
 

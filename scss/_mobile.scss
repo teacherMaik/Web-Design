@@ -172,6 +172,10 @@
           &.fa-pinterest {
             color: $tm-coralRed-solid;
           }
+
+          &.fa-instagram {
+            color: $tm-yellow-solid;
+          }
         }
       }
     }
@@ -243,6 +247,14 @@
             p {
               font-size: 14px;
               margin-bottom: 2rem;
+            }
+          }
+
+          .game-42-btn-container {
+
+            #showcase-42 {
+              padding: 0 2rem;
+              font-size: 18px;
             }
           }
 

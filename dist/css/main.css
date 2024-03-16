@@ -30,25 +30,21 @@
   padding: 1rem;
 }
 
-span.inline-coral {
+.inline-coral {
   color: rgb(234, 68, 90);
 }
 
-span.inline-bold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
+.inline-yellow {
+  color: rgb(250, 197, 80);
 }
 
-span.inline-bold-black {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
-  color: rgb(0, 0, 0);
-}
-
-span.inline-teal-bold {
-  font-family: "Kanit", sans-serif;
-  font-weight: 700;
+.inline-teal {
   color: rgb(116, 240, 237);
+}
+
+.inline-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
 }
 
 button {
@@ -606,6 +602,12 @@ footer .info .social i {
 footer .info .social i:hover {
   color: rgb(234, 68, 90);
 }
+footer .info .social i.fa-twitter:hover {
+  color: rgb(116, 240, 237);
+}
+footer .info .social i.fa-instagram:hover {
+  color: rgb(250, 197, 80);
+}
 footer .info h3 {
   font-size: 1.3rem;
   font-weight: 300;
@@ -1039,7 +1041,6 @@ footer .web-links a:hover {
 }
 #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p a {
   text-decoration: none;
-  color: rgb(234, 68, 90);
   font-weight: 400;
 }
 #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p a:hover {
@@ -1055,7 +1056,6 @@ footer .web-links a:hover {
 #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42 {
   display: block;
   min-width: 42%;
-  height: 84%;
   border-radius: 42px;
   justify-self: center;
   font-size: 21px;
@@ -1199,6 +1199,9 @@ footer .web-links a:hover {
   footer .info .social i.fa-pinterest {
     color: rgb(234, 68, 90);
   }
+  footer .info .social i.fa-instagram {
+    color: rgb(250, 197, 80);
+  }
   footer .web-links :nth-child(1) {
     color: rgb(116, 240, 237);
   }
@@ -1251,6 +1254,10 @@ footer .web-links a:hover {
   #tm-hero.game-42 .hero-content.forty-two .display-42 .instructions-42 p {
     font-size: 14px;
     margin-bottom: 2rem;
+  }
+  #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-btn-container #showcase-42 {
+    padding: 0 2rem;
+    font-size: 18px;
   }
   #tm-hero.game-42 .hero-content.forty-two .display-42 .game-42-results-container {
     font-size: 16px;

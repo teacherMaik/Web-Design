@@ -30,25 +30,21 @@
   padding: 1rem;
 }
 
-span.inline-coral {
+.inline-coral {
   color: $tm-coralRed-solid;
 }
 
-span.inline-bold {
-  font-family: $tm-kanit;
-  font-weight: 700;
+.inline-yellow {
+  color: $tm-yellow-solid;
 }
 
-span.inline-bold-black {
-  font-family: $tm-kanit;
-  font-weight: 700;
-  color: $tm-black-solid;
-}
-
-span.inline-teal-bold {
-  font-family: $tm-kanit;
-  font-weight: 700;
+.inline-teal {
   color: $tm-teal-solid;
+}
+
+.inline-bold {
+  font-family: $tm-kanit;
+  font-weight: 700;
 }
 
 button {
