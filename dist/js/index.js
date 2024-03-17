@@ -216,6 +216,23 @@ specsBtns.forEach(specsBtn => {
 
 if (window.location.pathname == '/css-portfolio/mondrian.html') {
 
+  // Smooth scroll done with JQUERY. NOT RECOMMENDED TO MIX VANILLA JAVASCRIPT AND JQUERY
+
+  $('.btn-scroll-down').on('click', function(e){
+
+    if (this.hash !== '') {
+
+      // Prevents default behaviour of click event, which would jump user to hash reference
+      e.preventDefault();
+
+      $('html, body').animate({
+
+        // Uses this from click event to reference hash from clicked button with btn-scroll-down class
+        scrollTop: $(this.hash).offset().top - 42
+      }, 800);
+    }
+  });
+
   let mondrianFlexToggle = document.getElementById('mondrian-flex-toggle');
   let flexItems = document.querySelectorAll('.flex-item');
   let dimensionsFlex = document.querySelectorAll('.dim-flex');

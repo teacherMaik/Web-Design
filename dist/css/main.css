@@ -157,9 +157,6 @@ h1, h2 {
 #tm-hero .hero-content.home .intro p {
   font-size: 3rem;
 }
-#tm-hero .hero-content.home .intro p span {
-  color: rgb(116, 240, 237);
-}
 #tm-hero .hero-content.home .display {
   width: 50%;
 }
@@ -527,10 +524,11 @@ h1, h2 {
 
 section.footer-specs {
   position: relative;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
   padding: 2rem;
-  width: 50%;
+  width: 100%;
+}
+section.footer-specs.css-portfolio {
+  background-color: rgb(0, 0, 0);
 }
 section.footer-specs button {
   position: relative;
@@ -538,6 +536,8 @@ section.footer-specs button {
   border: none;
   cursor: pointer;
   z-index: 7;
+  margin-left: 42px;
+  margin-bottom: 42px;
 }
 section.footer-specs button:hover, section.footer-specs button.active {
   color: rgb(116, 240, 237);
@@ -545,13 +545,13 @@ section.footer-specs button:hover, section.footer-specs button.active {
 }
 section.footer-specs .page-specs {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 42px;
+  left: 42px;
   border-radius: 42px;
   background-color: rgb(234, 68, 90);
   color: white;
   z-index: 3;
-  width: 100%;
+  width: 60%;
   height: 0px;
   display: flex;
   flex-direction: column;
@@ -561,6 +561,12 @@ section.footer-specs .page-specs {
 section.footer-specs .page-specs.active {
   height: 420px;
   padding: 2rem;
+}
+section.footer-specs .page-specs.css-portfolio {
+  width: 42%;
+}
+section.footer-specs .page-specs.css-portfolio.active {
+  height: 210px;
 }
 section.footer-specs .page-specs > div {
   margin-bottom: 2rem;
@@ -1108,14 +1114,14 @@ footer .web-links a:hover {
     height: 9rem;
     font-size: 9rem;
   }
-  #tm-hero .hero-content.webs {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
     padding-left: 3rem;
   }
-  #tm-hero .hero-content.webs .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
     width: 80%;
     margin-bottom: 2%;
   }
-  #tm-hero .hero-content.webs .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
     width: 50%;
     align-self: flex-end;
   }
@@ -1129,7 +1135,7 @@ footer .web-links a:hover {
   #tm-hero .hero-content.mondrian .intro h1, #tm-hero .hero-content.mondrian .intro h2, #tm-hero .hero-content.mondrian .intro p {
     width: 60%;
   }
-  #tm-hero .hero-content.mondrian .mondrian-buttons ul {
+  #tm-hero .hero-content.mondrian .intro .mondrian-buttons ul {
     width: 30%;
   }
   #tm-hero .hero-content.forty-two {
@@ -1276,14 +1282,14 @@ footer .web-links a:hover {
     height: 7rem;
     font-size: 7rem;
   }
-  #tm-hero .hero-content.webs {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
     padding: 0;
   }
-  #tm-hero .hero-content.webs .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
     width: 100%;
     margin-bottom: 2rem;
   }
-  #tm-hero .hero-content.webs .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
     width: 80%;
   }
   #tm-hero .hero-content.mondrian .display img {
@@ -1362,9 +1368,6 @@ footer .web-links a:hover {
   #mondrian-flex .info button, #mondrian-grid .info button {
     display: none;
   }
-  section.footer-specs {
-    width: 70%;
-  }
   footer {
     padding: 1rem 3rem;
   }
@@ -1389,13 +1392,13 @@ footer .web-links a:hover {
   #tm-hero {
     padding: 0 2rem;
   }
-  #tm-hero.web {
-    padding: 0 2rem;
+  #tm-hero.web, #tm-hero.css-portfolio {
+    padding: 0 2rem 7rem 2rem;
+    justify-content: flex-end;
   }
   #tm-hero .hero-content {
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 3rem;
   }
   #tm-hero .hero-content.home .intro {
     width: 250px;
@@ -1412,19 +1415,19 @@ footer .web-links a:hover {
     height: 4rem;
     font-size: 4rem;
   }
-  #tm-hero .hero-content.webs .intro h1 {
+  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1 {
     font-size: 4.2rem;
   }
-  #tm-hero .hero-content.webs .intro p {
+  #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2 {
+    font-size: 2.1rem;
+  }
+  #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p {
     font-size: 1.8rem;
   }
-  #tm-hero .hero-content.mondrian {
-    padding: 1rem;
-  }
-  #tm-hero .hero-content.mondrian .intro h1, #tm-hero .hero-content.mondrian .intro h2, #tm-hero .hero-content.mondrian .intro p {
+  #tm-hero .hero-content.css-portfolio .display {
     width: 100%;
   }
-  #tm-hero .hero-content.mondrian .intro .mondrian-buttons ul {
+  #tm-hero .hero-content.css-portfolio .display ul {
     width: 80%;
   }
   #tm-home-content .tm-home-content-container .tm-presentation {
@@ -1466,6 +1469,10 @@ footer .web-links a:hover {
   .webs-gallery {
     padding: 0 2rem;
   }
+  .webs-gallery-item {
+    height: auto;
+    margin: 42px 0;
+  }
   .webs-gallery-item-container .webs-gallery-img {
     width: 100%;
   }
@@ -1476,14 +1483,65 @@ footer .web-links a:hover {
     bottom: -42px;
   }
   section.footer-specs {
-    width: 90%;
+    padding: 1rem;
   }
-  section.footer-specs .page-specs > div {
+  section.footer-specs button {
+    margin-bottom: 21px;
+    margin-left: 21px;
+  }
+  section.footer-specs .page-specs, section.footer-specs .page-specs.css-portfolio {
+    bottom: 21px;
+    left: 21px;
+    width: 80%;
+  }
+  section.footer-specs .page-specs > div, section.footer-specs .page-specs.css-portfolio > div {
     font-size: 16px;
   }
   footer {
     padding: 1rem 3rem;
     flex-direction: column;
+  }
+}
+@media (max-width: 376px) {
+  #tm-hero.mondrian {
+    padding: 1rem 1rem !important;
+    justify-content: flex-end !important;
+  }
+  #tm-hero .hero-content.mondrian {
+    padding: 0 !important;
+  }
+  #tm-hero .hero-content.mondrian .display img {
+    width: 60% !important;
+  }
+  #tm-hero .hero-content.mondrian .intro h1, #tm-hero .hero-content.mondrian .intro h2, #tm-hero .hero-content.mondrian .intro p {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  #tm-hero .hero-content.mondrian .intro h1 {
+    font-size: 3rem !important;
+  }
+  #tm-hero .hero-content.mondrian .intro h2 {
+    font-size: 2.1rem !important;
+  }
+  #tm-hero .hero-content.mondrian .intro p {
+    font-size: 1.8rem !important;
+  }
+  #tm-hero .hero-content.mondrian .intro .mondrian-buttons {
+    width: 100% !important;
+  }
+  #tm-hero .hero-content.mondrian .intro .mondrian-buttons ul {
+    width: 100% !important;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li {
+    width: 80% !important;
+    padding: 0.3rem !important;
+  }
+  #tm-hero .hero-content.mondrian .intro .mondrian-buttons ul li a {
+    width: 80% !important;
+    padding: 0.3rem 1rem !important;
+    font-size: 1.7rem !important;
   }
 }
 

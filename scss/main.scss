@@ -121,10 +121,6 @@ h1, h2 {
   
         p {
           font-size: 3rem;
-  
-          span {
-            color: $tm-teal-solid;
-          }
         }
       }
   
@@ -560,10 +556,12 @@ h1, h2 {
 
 section.footer-specs {
   position: relative;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
   padding: 2rem;
-  width: 50%;
+  width: 100%;
+
+  &.css-portfolio {
+    background-color: $tm-black-solid;
+  }
 
   button {
     position: relative;
@@ -571,6 +569,8 @@ section.footer-specs {
     border: none;
     cursor: pointer;
     z-index: 7;
+    margin-left: 42px;
+    margin-bottom: 42px;
   }
 
   button:hover, button.active {
@@ -580,13 +580,13 @@ section.footer-specs {
 
   .page-specs {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 42px;
+    left: 42px;
     border-radius: 42px;
     background-color: $tm-coralRed-solid;
     color: white;
     z-index: 3;
-    width: 100%;
+    width: 60%;
     height: 0px;
     display: flex;
     flex-direction: column;
@@ -596,6 +596,14 @@ section.footer-specs {
     &.active {
       height: 420px;
       padding: 2rem;
+    }
+
+    &.css-portfolio {
+      width: 42%;
+
+      &.active {
+        height: 210px;
+      }
     }
 
     > div {
