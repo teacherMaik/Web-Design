@@ -143,7 +143,7 @@
       height: 80vh;
 
       &-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         row-gap: 2rem;
 
         .webs-gallery-img {
@@ -630,18 +630,46 @@
 @media(max-width: 376px) {
   #tm-hero {
 
-    &.mondrian {
+    &.web, &.css-portfolio, &.mondrian {
       padding: 1rem 1rem !important;
       justify-content: flex-end !important;
     }
 
     .hero-content {
 
+      &.webs, &.css-portfolio {
+        
+        .intro {
+          margin-bottom: 1rem;
+
+          h1, h2, p {
+            margin-bottom: 1rem;
+          }
+        }
+
+        .display {
+          width: 63%;
+
+          ul {
+
+            li {
+              padding: 0.3rem 1rem;
+
+              a {
+                font-size: 1.8rem;
+                padding: 0.3rem 1rem;
+              }
+            }
+          }
+        }
+      }
+
       &.mondrian {
         padding: 0 !important;
   
         .display {
-  
+          margin-bottom: 1rem;
+          
           img {
             width: 60% !important;
           }
@@ -677,6 +705,8 @@
               li {
                 width: 80% !important;
                 padding: 0.3rem !important;
+                display: flex;
+                justify-content: flex-end;
   
                 a {
                   width: 80% !important;
