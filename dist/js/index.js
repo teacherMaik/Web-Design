@@ -214,6 +214,7 @@ specsBtns.forEach(specsBtn => {
   });
 })
 
+// Functions for the Mondrian Page
 if (window.location.pathname == '/css-portfolio/mondrian.html') {
 
   // Smooth scroll done with JQUERY. NOT RECOMMENDED TO MIX VANILLA JAVASCRIPT AND JQUERY
@@ -233,6 +234,7 @@ if (window.location.pathname == '/css-portfolio/mondrian.html') {
     }
   });
 
+  // Toggle Dimensions functions for Mondrian Pieces
   let mondrianFlexToggle = document.getElementById('mondrian-flex-toggle');
   let flexItems = document.querySelectorAll('.flex-item');
   let dimensionsFlex = document.querySelectorAll('.dim-flex');

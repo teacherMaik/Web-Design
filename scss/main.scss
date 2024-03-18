@@ -135,7 +135,7 @@ h1, h2 {
       }
     }
 
-    &.webs, &.css-portfolio {
+    &.webs, &.css-portfolio, &.javascript-portfolio {
       justify-content: space-between;
       background-color: $tm-black-solid;
       color: $tm-white-solid;
@@ -549,6 +549,74 @@ h1, h2 {
             border-radius: 50%;
             background-color: $tm-coralRed-solid;
           }
+        }
+      }
+    }
+  }
+}
+
+section#simple-js {
+
+  .simple-exercise-container {
+    min-height: 42vh;
+    padding: 2rem 14rem;
+    color: $tm-black-solid;
+
+    h3 {
+      font-size: 4.2rem;
+      font-family: $tm-kanit;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 2.1rem;
+    }
+
+    .fizz-buzz, .fibonachi-sequence {
+      
+      &-info {
+        width: 80%;
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 42px;
+
+        &-user-input {
+
+          form {
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            input {
+              height: 42px;
+              border-radius: 14px;
+              padding: 0 2rem;
+              font-family: $tm-kanit;
+              font-size: 2.1rem;
+              text-align: center;
+            }
+          }
+        }        
+      }
+
+      &-output {
+        width: 100%;
+        min-height: 100px;
+        padding: 3rem;
+        border-radius: 21px;
+        font-size: 2.1rem;
+        text-align: justify;
+
+        &.output-black {
+          background-color: $tm-black-solid;
+          color: white;
+        }
+
+        &.output-yellow {
+          background-color: $tm-yellow-solid;
+          color: $tm-black-solid;
         }
       }
     }
