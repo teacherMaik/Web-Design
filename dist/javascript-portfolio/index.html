@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exercises and mini-projects to learn the depths of javascript">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="icon" type="image/x-icon" href="../img/tm-favicon.ico">
+  <script src="https://kit.fontawesome.com/43e3be112e.js" crossorigin="anonymous"></script>
+  <title>A collection of javascript Learnings on my path to becoming a programmer</title>
+</head>
+<body>
+  <nav id="tm-navbar" class="top">
+    <div class="tm-brand">
+      <a href="../"><img src="../img/Teacher-Maik-Logo.png" alt="Michael Thomas Bennett, aka Teacher Maik, Web Development Portfolio"></a>
+    </div>
+    <ul class="tm-main-menu">
+      <li><a href="../css-portfolio/index.html">cssArt</a></li>
+      <li><a class="current" href="/javascript-portfolio/">javascript</a></li>
+      <li><a href="../web-games-portfolio/index.html">games</a></li>
+      <li><a href="../my-webs.html">webs</a></li>
+    </ul>
+  </nav>
+
+  <section id="tm-hero" class="javascript-portfolio">
+    <div class="hero-content javascript-portfolio">
+      <div class="intro">
+        <h1>Mastering <span class="inline-coral inline-bold">javascript</span></h1>
+        <p>Here I share different exercises and projects that have guided my learning through frontend and backend development with javascript. Having already used C and Google Apps Script, I started with a bit of an advantage to diving deeper into this language.</p>
+        <h2>This portfolio has frontend javascript, some use of jquery as well as backend javascript as I grow.</h2>
+      </div>
+      <div class="display">
+        <ul>
+          <li><a href="#simple-js" class="tm-btn-teal btn-scroll-down">Simple Exercises</a></li>
+          <li><a class="tm-btn-yellow btn-scroll-down" href="#projects-50-days">50 projects in 50 days</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="simple-js">
+    <div id="fizz-buzz" class="fizz-buzz simple-exercise-container">
+      <div class="fizz-buzz-info">
+        <div class="fizz-buzz-info-instructions">
+          <h3>fizzBuzz</h3>
+          <p>Well known programming exercise with numbers. The function will show all numbers tsarting from 0, however showing "fizz" for multiples of 3, "buzz" for multiples of 5 and "fizzBuzz" for multiples of both 3 and 5. <span class="inline-bold">Enter a number an give it a try!</span></p>
+        </div>
+        <div class="fizz-buzz-info-user-input">
+          <form id="fizz-buzz-form" action="">
+            <input id="fizz-buzz-input" placeholder="Enter a number" type="number">
+          </form>
+        </div>
+      </div>
+      <div class="fizz-buzz-output output-black">
+  
+      </div>
+    </div>
+
+    <div id="fibonachi-sequence" class="fibonachi-sequence simple-exercise-container">
+      <div class="fibonachi-sequence-info">
+        <div class="fibonachi-sequence-info-instructions">
+          <h3>Fibonachi</h3>
+          <p>Another classic exercise with numbers. Given a position number, the function will display the number of the fibonachi sequence at the given position. In this version all numbers of the sequence will be displayed until the position given and thhat number will be highlighted. <span class="inline-bold">Enter a number an give it a try!</span></p></p>
+        </div>
+        <div class="fibonachi-sequence-info-user-input">
+          <form id="fibonachi-form" action="">
+            <input id="fibonachi-input" placeholder="Enter a number" type="number">
+          </form>
+        </div>
+      </div>
+      <div class="fibonachi-sequence-output output-yellow">
+  
+      </div>
+    </div>
+
+    <div id="projects-50-days" class="projects-50-days simple-exercise-container">
+      <div class="projects-50-days-info">
+        <div class="projects-50-days-info-instructions">
+          <h3><a class="tm-btn-black tm-btn" href="https://teachermaik.github.io/50projects50days-html-css-js/" target="_blank">50 projects in 50 days</a></h3>
+          <p>This is an open resource from <a class="inline-bold" href="https://github.com/bradtraversy/50projects50days">Brad Traversy</a> you can find on his github. I have learned A LOT with Traversy Media and took on these projects without doing the course. My project has all 50 projects in the same index.html and is styled with Bootstrap so my code is a bit different. I was able to complete most of the javascript on my own and it was very fun to compare my solutions to the author's. This is fantastic material for learning!</p>
+        </div>
+        <div class="projects-50-days-info-gallery">
+          <a href="https://teachermaik.github.io/50projects50days-html-css-js/" target="_blank"><img src="../img/50-projects-50-days.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-specs">
+    <button id="tm-javascript-portfolio-specs-button" class="tm-btn-coralRed specs-btn">Show Page Specs</button>
+    <div id="tm-javascript-portfolio-specs" class="page-specs javascript-portfolio">
+      <div class="javascript-portfolio-config">
+        <p>Same 100vh Hero section same as with all other main pages</p>
+      </div>
+      <div class="javascript-portfolio-exercises">
+        <p>Moost of the simple exercises I have done in various languages, including javascript to learn the syntax. Adding them to this page was great practice for interacting with the DOM</p>
+      </div>
+      <div class="javascript-portfolio-config">
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="info">
+      <div class="social">
+        <a href="https://github.com/teacherMaik" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/teachermaik/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://twitter.com/TeacherMaik" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCLTvAgvSy7ViRi7yAe0ogDA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.pinterest.es/TeacherMaik/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+      <h3>d.michaelthomasbennett@gmail.com</h3>
+      <h3>Madrid, Spain</h3>
+    </div>
+    <div class="web-links">
+      <a href="https://www.vindrogames.com/" target="_blank">Vindrogames</a>
+      <a href="https://terraturca.es/" target="_blank">Terra Turca Imports</a>
+      <a href="https://ludotecaenlanube.com/" target="_blank">Ludoteca en la Nube</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="../js/javascript.js" type="text/javascript" charset="UTF-8"></script>
+  
+</body>
+</html>

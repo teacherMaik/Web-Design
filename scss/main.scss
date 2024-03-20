@@ -71,9 +71,9 @@ h1, h2 {
         padding: 0.7rem 1.3rem;
         color: $tm-white-solid;
 
-        &:hover {
+        &:hover, &.current {
           background-color: $tm-coralRed-solid;
-        border-radius: 2rem;
+          border-radius: 2rem;
         }
       }
     }
@@ -135,7 +135,7 @@ h1, h2 {
       }
     }
 
-    &.webs, &.css-portfolio {
+    &.webs, &.css-portfolio, &.javascript-portfolio {
       justify-content: space-between;
       background-color: $tm-black-solid;
       color: $tm-white-solid;
@@ -548,6 +548,120 @@ h1, h2 {
             aspect-ratio: 1/1 ;
             border-radius: 50%;
             background-color: $tm-coralRed-solid;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Javascript Portfolio
+section#simple-js {
+
+  .simple-exercise-container {
+    min-height: 42vh;
+    padding: 2rem 14rem;
+    color: $tm-black-solid;
+    margin-bottom: 3rem;
+
+    h3 {
+      font-size: 4.2rem;
+      font-family: $tm-kanit;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 2.1rem;
+    }
+
+    .fizz-buzz, .fibonachi-sequence {
+      
+      &-info {
+        width: 80%;
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 42px;
+
+        &-user-input {
+
+          form {
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            input {
+              height: 42px;
+              border-radius: 14px;
+              padding: 0 2rem;
+              font-family: $tm-kanit;
+              font-size: 2.1rem;
+              text-align: center;
+            }
+          }
+        }        
+      }
+
+      &-output {
+        width: 100%;
+        min-height: 100px;
+        padding: 3rem;
+        border-radius: 21px;
+        font-size: 2.1rem;
+        text-align: justify;
+
+        &.output-black {
+          background-color: $tm-black-solid;
+          color: white;
+        }
+
+        &.output-yellow {
+          background-color: $tm-yellow-solid;
+          color: $tm-black-solid;
+        }
+      }
+    }
+
+    .projects-50-days {
+
+      &-info {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 3rem;
+        align-items: center;
+
+        h3 {
+          margin-bottom: 2rem;
+
+          a {
+            border-radius: 42px;
+            padding: 1rem 3rem; 
+
+            &:hover {
+              background-color: $tm-yellow-solid;
+              color: $tm-black-solid;
+            }
+          }
+        }
+
+        p {
+
+          a {
+            text-decoration: none;
+            color: $tm-black-solid;
+            
+            &:hover {
+              color: $tm-coralRed-solid;
+            }
+          }
+        }
+
+        &-gallery {
+
+          img {
+            width: 100%;
           }
         }
       }

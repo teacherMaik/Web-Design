@@ -5,6 +5,12 @@
   padding: 1rem;
 }
 
+.tm-btn-black {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+}
+
 .tm-btn-teal {
   background-color: rgb(116, 240, 237);
   color: rgb(0, 0, 0);
@@ -115,7 +121,7 @@ h1, h2 {
   padding: 0.7rem 1.3rem;
   color: rgb(255, 255, 255);
 }
-#tm-navbar .tm-main-menu li a:hover {
+#tm-navbar .tm-main-menu li a:hover, #tm-navbar .tm-main-menu li a.current {
   background-color: rgb(234, 68, 90);
   border-radius: 2rem;
 }
@@ -165,46 +171,46 @@ h1, h2 {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
 }
-#tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
+#tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
   justify-content: space-between;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-#tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
+#tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
   width: 60%;
 }
-#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1 {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1 {
   font-size: 7rem;
 }
-#tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2 {
+#tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2 {
   font-size: 3rem;
 }
-#tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p {
+#tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p {
   font-size: 2.1rem;
   text-align: justify;
   word-spacing: 0.7rem;
 }
-#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p {
   margin-bottom: 2rem;
 }
-#tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
+#tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
   width: 30%;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-#tm-hero .hero-content.webs .display ul, #tm-hero .hero-content.css-portfolio .display ul {
+#tm-hero .hero-content.webs .display ul, #tm-hero .hero-content.css-portfolio .display ul, #tm-hero .hero-content.javascript-portfolio .display ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li {
+#tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li {
   width: 100%;
   padding: 1rem;
 }
-#tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a {
+#tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a {
   display: block;
   width: 100%;
   font-size: 2.1rem;
@@ -213,17 +219,17 @@ h1, h2 {
   text-align: right;
   border: 2px solid transparent;
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-teal:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-teal:hover {
   border: 2px solid rgb(116, 240, 237);
   color: rgb(116, 240, 237);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-coralRed:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-coralRed:hover {
   border: 2px solid rgb(234, 68, 90);
   color: rgb(234, 68, 90);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-yellow:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-yellow:hover {
   border: 2px solid rgb(250, 197, 80);
   color: rgb(250, 197, 80);
   background-color: rgb(0, 0, 0);
@@ -521,6 +527,85 @@ h1, h2 {
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: rgb(234, 68, 90);
+}
+
+section#simple-js .simple-exercise-container {
+  min-height: 42vh;
+  padding: 2rem 14rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 3rem;
+}
+section#simple-js .simple-exercise-container h3 {
+  font-size: 4.2rem;
+  font-family: "Kanit", sans-serif;
+}
+section#simple-js .simple-exercise-container p {
+  text-align: justify;
+  font-size: 2.1rem;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-info, section#simple-js .simple-exercise-container .fibonachi-sequence-info {
+  width: 80%;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 42px;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-info-user-input form, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input form {
+  height: 84%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-info-user-input form input, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input form input {
+  height: 42px;
+  border-radius: 14px;
+  padding: 0 2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.1rem;
+  text-align: center;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-output, section#simple-js .simple-exercise-container .fibonachi-sequence-output {
+  width: 100%;
+  min-height: 100px;
+  padding: 3rem;
+  border-radius: 21px;
+  font-size: 2.1rem;
+  text-align: justify;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-output.output-black, section#simple-js .simple-exercise-container .fibonachi-sequence-output.output-black {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+section#simple-js .simple-exercise-container .fizz-buzz-output.output-yellow, section#simple-js .simple-exercise-container .fibonachi-sequence-output.output-yellow {
+  background-color: rgb(250, 197, 80);
+  color: rgb(0, 0, 0);
+}
+section#simple-js .simple-exercise-container .projects-50-days-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+section#simple-js .simple-exercise-container .projects-50-days-info h3 {
+  margin-bottom: 2rem;
+}
+section#simple-js .simple-exercise-container .projects-50-days-info h3 a {
+  border-radius: 42px;
+  padding: 1rem 3rem;
+}
+section#simple-js .simple-exercise-container .projects-50-days-info h3 a:hover {
+  background-color: rgb(250, 197, 80);
+  color: rgb(0, 0, 0);
+}
+section#simple-js .simple-exercise-container .projects-50-days-info p a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+section#simple-js .simple-exercise-container .projects-50-days-info p a:hover {
+  color: rgb(234, 68, 90);
+}
+section#simple-js .simple-exercise-container .projects-50-days-info-gallery img {
+  width: 100%;
 }
 
 section.footer-specs {
@@ -1115,14 +1200,14 @@ footer .web-links a:hover {
     height: 9rem;
     font-size: 9rem;
   }
-  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
     padding-left: 3rem;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
     width: 80%;
     margin-bottom: 2%;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
     width: 50%;
     align-self: flex-end;
   }
@@ -1199,6 +1284,31 @@ footer .web-links a:hover {
   }
   .webs-gallery-item-container .webs-gallery-text {
     padding: 1rem 9rem 1rem 0;
+  }
+  section#simple-js .simple-exercise-container {
+    padding: 2rem 7rem;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info, section#simple-js .simple-exercise-container .fibonachi-sequence-info {
+    width: 100%;
+    flex-direction: column;
+    gap: 21px;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-instructions, section#simple-js .simple-exercise-container .fibonachi-sequence-info-instructions {
+    width: 70%;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-user-input, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input {
+    position: relative;
+    width: 70%;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-user-input form, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input form {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  section#simple-js .simple-exercise-container .projects-50-days-info {
+    grid-template-columns: 1fr;
+  }
+  section#simple-js .simple-exercise-container .projects-50-days-info-instructions {
+    width: 100%;
   }
   footer .info .social i.fa-twitter {
     color: rgb(116, 240, 237);
@@ -1283,14 +1393,14 @@ footer .web-links a:hover {
     height: 7rem;
     font-size: 7rem;
   }
-  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
     padding: 0;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
     width: 100%;
     margin-bottom: 2rem;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
     width: 80%;
   }
   #tm-hero .hero-content.mondrian .display img {
@@ -1369,6 +1479,15 @@ footer .web-links a:hover {
   #mondrian-flex .info button, #mondrian-grid .info button {
     display: none;
   }
+  section#simple-js .simple-exercise-container {
+    padding: 2rem 3rem;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-instructions, section#simple-js .simple-exercise-container .fibonachi-sequence-info-instructions {
+    width: 100%;
+  }
+  section#simple-js .simple-exercise-container .projects-50-days-info h3 {
+    font-size: 2.1rem;
+  }
   footer {
     padding: 1rem 3rem;
   }
@@ -1388,12 +1507,13 @@ footer .web-links a:hover {
   }
   #tm-navbar .tm-main-menu li a {
     font-size: 1.7rem;
-    padding: 0.7rem;
+    padding: 0.7rem 1rem;
+    border-radius: 21px;
   }
   #tm-hero {
     padding: 0 2rem;
   }
-  #tm-hero.web, #tm-hero.css-portfolio {
+  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.javascript-portfolio {
     padding: 0 2rem 7rem 2rem;
     justify-content: flex-end;
   }
@@ -1416,13 +1536,13 @@ footer .web-links a:hover {
     height: 4rem;
     font-size: 4rem;
   }
-  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1 {
+  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1 {
     font-size: 4.2rem;
   }
-  #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2 {
+  #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2 {
     font-size: 2.1rem;
   }
-  #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p {
+  #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p {
     font-size: 1.8rem;
   }
   #tm-hero .hero-content.css-portfolio .display {
@@ -1483,6 +1603,14 @@ footer .web-links a:hover {
   .webs-gallery-item-container .webs-gallery-text .dot-outer {
     bottom: -42px;
   }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-user-input, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input {
+    width: 100%;
+  }
+  section#simple-js .simple-exercise-container .fizz-buzz-info-user-input form, section#simple-js .simple-exercise-container .fibonachi-sequence-info-user-input form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
   section.footer-specs {
     padding: 1rem;
   }
@@ -1504,23 +1632,23 @@ footer .web-links a:hover {
   }
 }
 @media (max-width: 376px) {
-  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian {
+  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian, #tm-hero.javascript-portfolio {
     padding: 1rem 1rem !important;
     justify-content: flex-end !important;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
     margin-bottom: 1rem;
   }
-  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p {
+  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p {
     margin-bottom: 1rem;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
     width: 63%;
   }
-  #tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li {
+  #tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li {
     padding: 0.3rem 1rem;
   }
-  #tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a {
+  #tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a {
     font-size: 1.8rem;
     padding: 0.3rem 1rem;
   }
@@ -1564,6 +1692,10 @@ footer .web-links a:hover {
     width: 80% !important;
     padding: 0.3rem 1rem !important;
     font-size: 1.7rem !important;
+  }
+  section#simple-js .projects-50-days-info-instructions h3 {
+    width: 100%;
+    text-align: center;
   }
 }
 
