@@ -26,7 +26,7 @@
         }
       }
 
-      &.webs, &.css-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio {
 
         padding-left: 3rem;
 
@@ -152,6 +152,47 @@
 
         .webs-gallery-text {
           padding: 1rem 9rem 1rem 0;
+        }
+      }
+    }
+  }
+
+  section#simple-js {
+
+    .simple-exercise-container {
+
+      padding: 2rem 7rem;
+      .fizz-buzz, .fibonachi-sequence {
+
+        &-info {
+          width: 100%;
+          flex-direction: column;
+          gap: 21px;
+
+          &-instructions {
+            width: 70%;
+          }
+
+          &-user-input {
+            position: relative;
+            width: 70%;
+
+            form {
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+
+      .projects-50-days {
+
+        &-info {
+          grid-template-columns: 1fr;
+
+          &-instructions {
+            width: 100%;
+          }
         }
       }
     }
@@ -287,7 +328,7 @@
         }
       }
 
-      &.webs, &.css-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio {
         padding: 0;
 
         .intro {
@@ -432,6 +473,32 @@
     }
   }
 
+  section#simple-js {
+
+    .simple-exercise-container {
+      padding: 2rem 3rem;
+      .fizz-buzz, .fibonachi-sequence {
+
+        &-info {
+
+          &-instructions {
+            width: 100%;
+          }
+        }
+      }
+
+      .projects-50-days {
+
+        &-info {
+
+          h3 {
+            font-size: 2.1rem;
+          }
+        }
+      }
+    }
+  }
+
   footer {
     padding: 1rem 3rem;
   }
@@ -455,7 +522,8 @@
 
         a {
           font-size: 1.7rem;
-          padding: 0.7rem;
+          padding: 0.7rem 1rem;
+          border-radius: 21px;
         }
       }
     }
@@ -464,7 +532,7 @@
   #tm-hero {
     padding: 0 2rem;
 
-    &.web, &.css-portfolio {
+    &.web, &.css-portfolio, &.javascript-portfolio {
       padding: 0 2rem 7rem 2rem;
       justify-content: flex-end;
     }
@@ -495,7 +563,7 @@
         }
       }
 
-      &.webs, &.css-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio {
 
         .intro {
 
@@ -603,6 +671,27 @@
     }
   }
 
+  section#simple-js {
+
+    .simple-exercise-container {
+
+      .fizz-buzz, .fibonachi-sequence {
+
+        &-info {
+
+            &-user-input {
+              width: 100%;
+              form {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+              }
+          }
+        }
+      }
+    }
+  }
+
   section.footer-specs {
     padding: 1rem;
 
@@ -630,14 +719,14 @@
 @media(max-width: 376px) {
   #tm-hero {
 
-    &.web, &.css-portfolio, &.mondrian {
+    &.web, &.css-portfolio, &.mondrian, &.javascript-portfolio {
       padding: 1rem 1rem !important;
       justify-content: flex-end !important;
     }
 
     .hero-content {
 
-      &.webs, &.css-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio {
         
         .intro {
           margin-bottom: 1rem;
@@ -718,7 +807,27 @@
           }
         }
       }
+
+      &.javascript-portfolio {
+
+      }
     }
   }
 
+  section#simple-js {
+
+    .projects-50-days {
+
+      &-info {
+
+        &-instructions {
+
+          h3 {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
