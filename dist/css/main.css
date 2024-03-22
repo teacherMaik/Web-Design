@@ -1041,6 +1041,34 @@ footer .web-links a:hover {
   border: 2px solid rgb(0, 0, 0);
 }
 
+section.game-container {
+  background-color: white;
+  min-height: 42vh;
+  padding: 3rem 7rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+section.game-container .boardgames-info {
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+section.game-container .boardgames-info h3 {
+  font-size: 4.2rem;
+  font-family: "Kanit", sans-serif;
+}
+section.game-container .boardgames-info p {
+  font-size: 2.1rem;
+}
+section.game-container .boardgames-gallery {
+  align-self: center;
+  text-align: center;
+}
+section.game-container .boardgames-gallery img {
+  width: 84%;
+}
+
 #tm-hero-tr3s {
   height: 100vh;
   width: 100%;
