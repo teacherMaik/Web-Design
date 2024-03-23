@@ -1057,9 +1057,11 @@ section.game-container .boardgames-info {
 section.game-container .boardgames-info h3 {
   font-size: 4.2rem;
   font-family: "Kanit", sans-serif;
+  margin-bottom: 3rem;
 }
 section.game-container .boardgames-info p {
   font-size: 2.1rem;
+  text-align: justify;
 }
 section.game-container .boardgames-gallery {
   align-self: center;
