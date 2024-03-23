@@ -135,7 +135,7 @@ h1, h2 {
       }
     }
 
-    &.webs, &.css-portfolio, &.javascript-portfolio {
+    &.webs, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
       justify-content: space-between;
       background-color: $tm-black-solid;
       color: $tm-white-solid;
@@ -669,6 +669,8 @@ section#simple-js {
   }
 }
 
+
+// Footer specs interactive button at bottom of pages
 section.footer-specs {
   position: relative;
   padding: 2rem;
