@@ -171,46 +171,46 @@ h1, h2 {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
 }
-#tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
+#tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio, #tm-hero .hero-content.web-games-portfolio {
   justify-content: space-between;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
-#tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
+#tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro, #tm-hero .hero-content.web-games-portfolio .intro {
   width: 60%;
 }
-#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1 {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.web-games-portfolio .intro h1 {
   font-size: 7rem;
 }
-#tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2 {
+#tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.web-games-portfolio .intro h2 {
   font-size: 3rem;
 }
-#tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p {
+#tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p, #tm-hero .hero-content.web-games-portfolio .intro p {
   font-size: 2.1rem;
   text-align: justify;
   word-spacing: 0.7rem;
 }
-#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p {
+#tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p, #tm-hero .hero-content.web-games-portfolio .intro h1, #tm-hero .hero-content.web-games-portfolio .intro h2, #tm-hero .hero-content.web-games-portfolio .intro p {
   margin-bottom: 2rem;
 }
-#tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
+#tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display, #tm-hero .hero-content.web-games-portfolio .display {
   width: 30%;
   height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-#tm-hero .hero-content.webs .display ul, #tm-hero .hero-content.css-portfolio .display ul, #tm-hero .hero-content.javascript-portfolio .display ul {
+#tm-hero .hero-content.webs .display ul, #tm-hero .hero-content.css-portfolio .display ul, #tm-hero .hero-content.javascript-portfolio .display ul, #tm-hero .hero-content.web-games-portfolio .display ul {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-#tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li {
+#tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li, #tm-hero .hero-content.web-games-portfolio .display ul li {
   width: 100%;
   padding: 1rem;
 }
-#tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a {
+#tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a, #tm-hero .hero-content.web-games-portfolio .display ul li a {
   display: block;
   width: 100%;
   font-size: 2.1rem;
@@ -219,17 +219,17 @@ h1, h2 {
   text-align: right;
   border: 2px solid transparent;
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-teal:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-teal:hover, #tm-hero .hero-content.web-games-portfolio .display ul li a.tm-btn-teal:hover {
   border: 2px solid rgb(116, 240, 237);
   color: rgb(116, 240, 237);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-coralRed:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-coralRed:hover, #tm-hero .hero-content.web-games-portfolio .display ul li a.tm-btn-coralRed:hover {
   border: 2px solid rgb(234, 68, 90);
   color: rgb(234, 68, 90);
   background-color: rgb(0, 0, 0);
 }
-#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-yellow:hover {
+#tm-hero .hero-content.webs .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.css-portfolio .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.javascript-portfolio .display ul li a.tm-btn-yellow:hover, #tm-hero .hero-content.web-games-portfolio .display ul li a.tm-btn-yellow:hover {
   border: 2px solid rgb(250, 197, 80);
   color: rgb(250, 197, 80);
   background-color: rgb(0, 0, 0);
@@ -1056,8 +1056,15 @@ section.game-container .boardgames-info {
 }
 section.game-container .boardgames-info h3 {
   font-size: 4.2rem;
-  font-family: "Kanit", sans-serif;
   margin-bottom: 3rem;
+}
+section.game-container .boardgames-info h3 a {
+  font-family: "Kanit", sans-serif;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+section.game-container .boardgames-info h3 a:hover {
+  color: rgb(234, 68, 90);
 }
 section.game-container .boardgames-info p {
   font-size: 2.1rem;
@@ -1230,14 +1237,14 @@ section.game-container .boardgames-gallery img {
     height: 9rem;
     font-size: 9rem;
   }
-  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio, #tm-hero .hero-content.web-games-portfolio {
     padding-left: 3rem;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro, #tm-hero .hero-content.web-games-portfolio .intro {
     width: 80%;
     margin-bottom: 2%;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display, #tm-hero .hero-content.web-games-portfolio .display {
     width: 50%;
     align-self: flex-end;
   }
@@ -1340,6 +1347,19 @@ section.game-container .boardgames-gallery img {
   section#simple-js .simple-exercise-container .projects-50-days-info-instructions {
     width: 100%;
   }
+  section.game-container {
+    min-height: 21vh;
+    padding: 3rem;
+  }
+  section.game-container .boardgames-info {
+    padding: 3rem 3rem 3rem 0;
+  }
+  section.game-container .boardgames-info h3 {
+    margin-bottom: 2rem;
+  }
+  section.game-container .boardgames-gallery img {
+    width: 100%;
+  }
   footer .info .social i.fa-twitter {
     color: rgb(116, 240, 237);
   }
@@ -1423,14 +1443,14 @@ section.game-container .boardgames-gallery img {
     height: 7rem;
     font-size: 7rem;
   }
-  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio {
+  #tm-hero .hero-content.webs, #tm-hero .hero-content.css-portfolio, #tm-hero .hero-content.javascript-portfolio, #tm-hero .hero-content.web-games-portfolio {
     padding: 0;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro, #tm-hero .hero-content.web-games-portfolio .intro {
     width: 100%;
     margin-bottom: 2rem;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display, #tm-hero .hero-content.web-games-portfolio .display {
     width: 80%;
   }
   #tm-hero .hero-content.mondrian .display img {
@@ -1518,6 +1538,9 @@ section.game-container .boardgames-gallery img {
   section#simple-js .simple-exercise-container .projects-50-days-info h3 {
     font-size: 2.1rem;
   }
+  section.game-container {
+    grid-template-columns: 1fr;
+  }
   footer {
     padding: 1rem 3rem;
   }
@@ -1543,7 +1566,7 @@ section.game-container .boardgames-gallery img {
   #tm-hero {
     padding: 0 2rem;
   }
-  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.javascript-portfolio {
+  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.javascript-portfolio, #tm-hero.web-games-portfolio {
     padding: 0 2rem 7rem 2rem;
     justify-content: flex-end;
   }
@@ -1566,13 +1589,13 @@ section.game-container .boardgames-gallery img {
     height: 4rem;
     font-size: 4rem;
   }
-  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1 {
+  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.web-games-portfolio .intro h1 {
     font-size: 4.2rem;
   }
-  #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2 {
+  #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.web-games-portfolio .intro h2 {
     font-size: 2.1rem;
   }
-  #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p {
+  #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro p, #tm-hero .hero-content.web-games-portfolio .intro p {
     font-size: 1.8rem;
   }
   #tm-hero .hero-content.css-portfolio .display {
@@ -1662,23 +1685,23 @@ section.game-container .boardgames-gallery img {
   }
 }
 @media (max-width: 376px) {
-  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian, #tm-hero.javascript-portfolio {
+  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian, #tm-hero.javascript-portfolio, #tm-hero.web-games-portfolio {
     padding: 1rem 1rem !important;
     justify-content: flex-end !important;
   }
-  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro {
+  #tm-hero .hero-content.webs .intro, #tm-hero .hero-content.css-portfolio .intro, #tm-hero .hero-content.javascript-portfolio .intro, #tm-hero .hero-content.web-games-portfolio .intro {
     margin-bottom: 1rem;
   }
-  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p {
+  #tm-hero .hero-content.webs .intro h1, #tm-hero .hero-content.webs .intro h2, #tm-hero .hero-content.webs .intro p, #tm-hero .hero-content.css-portfolio .intro h1, #tm-hero .hero-content.css-portfolio .intro h2, #tm-hero .hero-content.css-portfolio .intro p, #tm-hero .hero-content.javascript-portfolio .intro h1, #tm-hero .hero-content.javascript-portfolio .intro h2, #tm-hero .hero-content.javascript-portfolio .intro p, #tm-hero .hero-content.web-games-portfolio .intro h1, #tm-hero .hero-content.web-games-portfolio .intro h2, #tm-hero .hero-content.web-games-portfolio .intro p {
     margin-bottom: 1rem;
   }
-  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display {
+  #tm-hero .hero-content.webs .display, #tm-hero .hero-content.css-portfolio .display, #tm-hero .hero-content.javascript-portfolio .display, #tm-hero .hero-content.web-games-portfolio .display {
     width: 63%;
   }
-  #tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li {
+  #tm-hero .hero-content.webs .display ul li, #tm-hero .hero-content.css-portfolio .display ul li, #tm-hero .hero-content.javascript-portfolio .display ul li, #tm-hero .hero-content.web-games-portfolio .display ul li {
     padding: 0.3rem 1rem;
   }
-  #tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a {
+  #tm-hero .hero-content.webs .display ul li a, #tm-hero .hero-content.css-portfolio .display ul li a, #tm-hero .hero-content.javascript-portfolio .display ul li a, #tm-hero .hero-content.web-games-portfolio .display ul li a {
     font-size: 1.8rem;
     padding: 0.3rem 1rem;
   }

@@ -14,8 +14,17 @@ section.game-container {
 
     h3 {
       font-size: 4.2rem;
-      font-family: $tm-kanit;
       margin-bottom: 3rem;
+
+      a {
+        font-family: $tm-kanit;
+        color: $tm-black-solid;
+        text-decoration: none;
+
+        &:hover {
+          color: $tm-coralRed-solid;
+        }
+      }
     }
 
     p {

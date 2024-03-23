@@ -26,7 +26,7 @@
         }
       }
 
-      &.webs, &.css-portfolio, &.javascript-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
 
         padding-left: 3rem;
 
@@ -198,6 +198,26 @@
     }
   }
 
+  section.game-container {
+    min-height: 21vh;
+    padding: 3rem;
+
+    .boardgames-info {
+      padding: 3rem 3rem 3rem 0;
+
+      h3 {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .boardgames-gallery {
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
   footer {
 
     .info {
@@ -328,7 +348,7 @@
         }
       }
 
-      &.webs, &.css-portfolio, &.javascript-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
         padding: 0;
 
         .intro {
@@ -499,6 +519,11 @@
     }
   }
 
+  section.game-container {
+    grid-template-columns: 1fr;
+
+  }
+
   footer {
     padding: 1rem 3rem;
   }
@@ -532,7 +557,7 @@
   #tm-hero {
     padding: 0 2rem;
 
-    &.web, &.css-portfolio, &.javascript-portfolio {
+    &.web, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
       padding: 0 2rem 7rem 2rem;
       justify-content: flex-end;
     }
@@ -563,7 +588,7 @@
         }
       }
 
-      &.webs, &.css-portfolio, &.javascript-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
 
         .intro {
 
@@ -719,14 +744,14 @@
 @media(max-width: 376px) {
   #tm-hero {
 
-    &.web, &.css-portfolio, &.mondrian, &.javascript-portfolio {
+    &.web, &.css-portfolio, &.mondrian, &.javascript-portfolio, &.web-games-portfolio {
       padding: 1rem 1rem !important;
       justify-content: flex-end !important;
     }
 
     .hero-content {
 
-      &.webs, &.css-portfolio, &.javascript-portfolio {
+      &.webs, &.css-portfolio, &.javascript-portfolio, &.web-games-portfolio {
         
         .intro {
           margin-bottom: 1rem;
