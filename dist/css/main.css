@@ -1103,6 +1103,9 @@ section.game-container .boardgames-gallery img {
   margin: 1rem;
 }
 
+#tm-hero.game-42 {
+  height: auto;
+}
 #tm-hero.game-42 .hero-content.forty-two {
   padding-top: 100px;
   width: 90%;
@@ -1221,6 +1224,7 @@ section.game-container .boardgames-gallery img {
     padding: 0 2.1rem;
   }
   #tm-hero.game-42 {
+    height: 100vh;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -1685,7 +1689,7 @@ section.game-container .boardgames-gallery img {
   }
 }
 @media (max-width: 376px) {
-  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian, #tm-hero.javascript-portfolio, #tm-hero.web-games-portfolio {
+  #tm-hero.web, #tm-hero.css-portfolio, #tm-hero.mondrian, #tm-hero.javascript-portfolio, #tm-hero.web-games-portfolio, #tm-hero.game-42 {
     padding: 1rem 1rem !important;
     justify-content: flex-end !important;
   }

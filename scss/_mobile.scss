@@ -4,6 +4,7 @@
     padding: 0 2.1rem;
 
     &.game-42 {
+      height: 100vh;
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -744,7 +745,7 @@
 @media(max-width: 376px) {
   #tm-hero {
 
-    &.web, &.css-portfolio, &.mondrian, &.javascript-portfolio, &.web-games-portfolio {
+    &.web, &.css-portfolio, &.mondrian, &.javascript-portfolio, &.web-games-portfolio, &.game-42 {
       padding: 1rem 1rem !important;
       justify-content: flex-end !important;
     }
