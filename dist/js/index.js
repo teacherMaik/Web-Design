@@ -93,7 +93,7 @@ if (window.location.pathname == "/") {
 
 // Smoothscroll with jQuery
 // Conditional to check if navigating my-webs page
-if (window.location.pathname == "/my-webs" || window.location.pathname == "/my-webs.html") {
+if (window.location.pathname == "/my-webs" || window.location.pathname == "/my-webs.html" || window.location.pathname == "/web-games-portfolio/") {
 
   // Gets all outer dots by scroll-top class and adds click function
   $('.btn-scroll-top').on('click', function(e) {
